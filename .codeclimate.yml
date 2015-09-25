@@ -1,0 +1,11 @@
+# Climate Platform. For an overview of the Code Climate Platform, see here:
+# http://docs.codeclimate.com/article/300-the-codeclimate-platform
+
+engines:
+  rubocop:
+    enabled: true
+
+ratings:
+  paths:
+  - lib/**
+  - "**.rb"
