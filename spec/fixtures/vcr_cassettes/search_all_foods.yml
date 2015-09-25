@@ -1,0 +1,377 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.nal.usda.gov/ndb/search?api_key=DEMO_KEY&fg=&format=JSON&max=50&offset=0&q=&sort=r
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Sat, 26 Sep 2015 21:08:39 GMT
+      Location:
+      - ''
+      Server:
+      - nginx
+      Set-Cookie:
+      - BIGipServerndb-pool=282659594.20480.0000; path=/
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 varnish-v4
+      X-Cache:
+      - MISS
+      X-Ratelimit-Limit:
+      - '30'
+      X-Ratelimit-Remaining:
+      - '15'
+      X-Varnish:
+      - '24430917'
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+            "list": {
+                "q": "",
+                "sr": "27",
+                "start": 0,
+                "end": 50,
+                "total": 8618,
+                "group": "",
+                "sort": "r",
+                "item": [
+                    {
+                        "offset": 0,
+                        "group": "Dairy and Egg Products",
+                        "name": "Butter, salted",
+                        "ndbno": "01001"
+                    },
+                    {
+                        "offset": 1,
+                        "group": "Dairy and Egg Products",
+                        "name": "Butter, whipped, with salt",
+                        "ndbno": "01002"
+                    },
+                    {
+                        "offset": 2,
+                        "group": "Dairy and Egg Products",
+                        "name": "Butter oil, anhydrous",
+                        "ndbno": "01003"
+                    },
+                    {
+                        "offset": 3,
+                        "group": "Dairy and Egg Products",
+                        "name": "Cheese, blue",
+                        "ndbno": "01004"
+                    },
+                    {
+                        "offset": 4,
+                        "group": "Dairy and Egg Products",
+                        "name": "Cheese, brick",
+                        "ndbno": "01005"
+                    },
+                    {
+                        "offset": 5,
+                        "group": "Dairy and Egg Products",
+                        "name": "Cheese, brie",
+                        "ndbno": "01006"
+                    },
+                    {
+                        "offset": 6,
+                        "group": "Dairy and Egg Products",
+                        "name": "Cheese, camembert",
+                        "ndbno": "01007"
+                    },
+                    {
+                        "offset": 7,
+                        "group": "Dairy and Egg Products",
+                        "name": "Cheese, caraway",
+                        "ndbno": "01008"
+                    },
+                    {
+                        "offset": 8,
+                        "group": "Dairy and Egg Products",
+                        "name": "Cheese, cheddar",
+                        "ndbno": "01009"
+                    },
+                    {
+                        "offset": 9,
+                        "group": "Dairy and Egg Products",
+                        "name": "Cheese, cheshire",
+                        "ndbno": "01010"
+                    },
+                    {
+                        "offset": 10,
+                        "group": "Dairy and Egg Products",
+                        "name": "Cheese, colby",
+                        "ndbno": "01011"
+                    },
+                    {
+                        "offset": 11,
+                        "group": "Dairy and Egg Products",
+                        "name": "Cheese, cottage, creamed, large or small curd",
+                        "ndbno": "01012"
+                    },
+                    {
+                        "offset": 12,
+                        "group": "Dairy and Egg Products",
+                        "name": "Cheese, cottage, creamed, with fruit",
+                        "ndbno": "01013"
+                    },
+                    {
+                        "offset": 13,
+                        "group": "Dairy and Egg Products",
+                        "name": "Cheese, cottage, nonfat, uncreamed, dry, large or small curd",
+                        "ndbno": "01014"
+                    },
+                    {
+                        "offset": 14,
+                        "group": "Dairy and Egg Products",
+                        "name": "Cheese, cottage, lowfat, 2% milkfat",
+                        "ndbno": "01015"
+                    },
+                    {
+                        "offset": 15,
+                        "group": "Dairy and Egg Products",
+                        "name": "Cheese, cottage, lowfat, 1% milkfat",
+                        "ndbno": "01016"
+                    },
+                    {
+                        "offset": 16,
+                        "group": "Dairy and Egg Products",
+                        "name": "Cheese, cream",
+                        "ndbno": "01017"
+                    },
+                    {
+                        "offset": 17,
+                        "group": "Dairy and Egg Products",
+                        "name": "Cheese, edam",
+                        "ndbno": "01018"
+                    },
+                    {
+                        "offset": 18,
+                        "group": "Dairy and Egg Products",
+                        "name": "Cheese, feta",
+                        "ndbno": "01019"
+                    },
+                    {
+                        "offset": 19,
+                        "group": "Dairy and Egg Products",
+                        "name": "Cheese, fontina",
+                        "ndbno": "01020"
+                    },
+                    {
+                        "offset": 20,
+                        "group": "Dairy and Egg Products",
+                        "name": "Cheese, gjetost",
+                        "ndbno": "01021"
+                    },
+                    {
+                        "offset": 21,
+                        "group": "Dairy and Egg Products",
+                        "name": "Cheese, gouda",
+                        "ndbno": "01022"
+                    },
+                    {
+                        "offset": 22,
+                        "group": "Dairy and Egg Products",
+                        "name": "Cheese, gruyere",
+                        "ndbno": "01023"
+                    },
+                    {
+                        "offset": 23,
+                        "group": "Dairy and Egg Products",
+                        "name": "Cheese, limburger",
+                        "ndbno": "01024"
+                    },
+                    {
+                        "offset": 24,
+                        "group": "Dairy and Egg Products",
+                        "name": "Cheese, monterey",
+                        "ndbno": "01025"
+                    },
+                    {
+                        "offset": 25,
+                        "group": "Dairy and Egg Products",
+                        "name": "Cheese, mozzarella, whole milk",
+                        "ndbno": "01026"
+                    },
+                    {
+                        "offset": 26,
+                        "group": "Dairy and Egg Products",
+                        "name": "Cheese, mozzarella, whole milk, low moisture",
+                        "ndbno": "01027"
+                    },
+                    {
+                        "offset": 27,
+                        "group": "Dairy and Egg Products",
+                        "name": "Cheese, mozzarella, part skim milk",
+                        "ndbno": "01028"
+                    },
+                    {
+                        "offset": 28,
+                        "group": "Dairy and Egg Products",
+                        "name": "Cheese, mozzarella, low moisture, part-skim",
+                        "ndbno": "01029"
+                    },
+                    {
+                        "offset": 29,
+                        "group": "Dairy and Egg Products",
+                        "name": "Cheese, muenster",
+                        "ndbno": "01030"
+                    },
+                    {
+                        "offset": 30,
+                        "group": "Dairy and Egg Products",
+                        "name": "Cheese, neufchatel",
+                        "ndbno": "01031"
+                    },
+                    {
+                        "offset": 31,
+                        "group": "Dairy and Egg Products",
+                        "name": "Cheese, parmesan, grated",
+                        "ndbno": "01032"
+                    },
+                    {
+                        "offset": 32,
+                        "group": "Dairy and Egg Products",
+                        "name": "Cheese, parmesan, hard",
+                        "ndbno": "01033"
+                    },
+                    {
+                        "offset": 33,
+                        "group": "Dairy and Egg Products",
+                        "name": "Cheese, port de salut",
+                        "ndbno": "01034"
+                    },
+                    {
+                        "offset": 34,
+                        "group": "Dairy and Egg Products",
+                        "name": "Cheese, provolone",
+                        "ndbno": "01035"
+                    },
+                    {
+                        "offset": 35,
+                        "group": "Dairy and Egg Products",
+                        "name": "Cheese, ricotta, whole milk",
+                        "ndbno": "01036"
+                    },
+                    {
+                        "offset": 36,
+                        "group": "Dairy and Egg Products",
+                        "name": "Cheese, ricotta, part skim milk",
+                        "ndbno": "01037"
+                    },
+                    {
+                        "offset": 37,
+                        "group": "Dairy and Egg Products",
+                        "name": "Cheese, romano",
+                        "ndbno": "01038"
+                    },
+                    {
+                        "offset": 38,
+                        "group": "Dairy and Egg Products",
+                        "name": "Cheese, roquefort",
+                        "ndbno": "01039"
+                    },
+                    {
+                        "offset": 39,
+                        "group": "Dairy and Egg Products",
+                        "name": "Cheese, swiss",
+                        "ndbno": "01040"
+                    },
+                    {
+                        "offset": 40,
+                        "group": "Dairy and Egg Products",
+                        "name": "Cheese, tilsit",
+                        "ndbno": "01041"
+                    },
+                    {
+                        "offset": 41,
+                        "group": "Dairy and Egg Products",
+                        "name": "Cheese, pasteurized process, American, fortified with vitamin D",
+                        "ndbno": "01042"
+                    },
+                    {
+                        "offset": 42,
+                        "group": "Dairy and Egg Products",
+                        "name": "Cheese, pasteurized process, pimento",
+                        "ndbno": "01043"
+                    },
+                    {
+                        "offset": 43,
+                        "group": "Dairy and Egg Products",
+                        "name": "Cheese, pasteurized process, swiss",
+                        "ndbno": "01044"
+                    },
+                    {
+                        "offset": 44,
+                        "group": "Dairy and Egg Products",
+                        "name": "Cheese food, cold pack, American",
+                        "ndbno": "01045"
+                    },
+                    {
+                        "offset": 45,
+                        "group": "Dairy and Egg Products",
+                        "name": "Cheese food, pasteurized process, American, vitamin D fortified",
+                        "ndbno": "01046"
+                    },
+                    {
+                        "offset": 46,
+                        "group": "Dairy and Egg Products",
+                        "name": "Cheese food, pasteurized process, swiss",
+                        "ndbno": "01047"
+                    },
+                    {
+                        "offset": 47,
+                        "group": "Dairy and Egg Products",
+                        "name": "Cheese spread, pasteurized process, American",
+                        "ndbno": "01048"
+                    },
+                    {
+                        "offset": 48,
+                        "group": "Dairy and Egg Products",
+                        "name": "Cream, fluid, half and half",
+                        "ndbno": "01049"
+                    },
+                    {
+                        "offset": 49,
+                        "group": "Dairy and Egg Products",
+                        "name": "Cream, fluid, light (coffee cream or table cream)",
+                        "ndbno": "01050"
+                    }
+                ]
+            }
+        }
+    http_version: 
+  recorded_at: Sat, 26 Sep 2015 21:08:39 GMT
+recorded_with: VCR 2.9.3

@@ -1,0 +1,375 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.nal.usda.gov/ndb/search?api_key=DEMO_KEY&fg=0500&format=JSON&max=50&offset=0&q=&sort=r
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Sat, 26 Sep 2015 21:08:39 GMT
+      Location:
+      - ''
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 varnish-v4
+      X-Cache:
+      - MISS
+      X-Ratelimit-Limit:
+      - '30'
+      X-Ratelimit-Remaining:
+      - '11'
+      X-Varnish:
+      - '24430923'
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+            "list": {
+                "q": "",
+                "sr": "27",
+                "start": 0,
+                "end": 50,
+                "total": 390,
+                "group": "0500",
+                "sort": "r",
+                "item": [
+                    {
+                        "offset": 0,
+                        "group": "Poultry Products",
+                        "name": "Chicken, broiler, rotisserie, BBQ, breast meat only",
+                        "ndbno": "05000"
+                    },
+                    {
+                        "offset": 1,
+                        "group": "Poultry Products",
+                        "name": "Chicken, broilers or fryers, meat and skin and giblets and neck, raw",
+                        "ndbno": "05001"
+                    },
+                    {
+                        "offset": 2,
+                        "group": "Poultry Products",
+                        "name": "Chicken, broilers or fryers, meat and skin and giblets and neck, cooked, fried, batter",
+                        "ndbno": "05002"
+                    },
+                    {
+                        "offset": 3,
+                        "group": "Poultry Products",
+                        "name": "Chicken, broilers or fryers, meat and skin and giblets and neck, cooked, fried, flour",
+                        "ndbno": "05003"
+                    },
+                    {
+                        "offset": 4,
+                        "group": "Poultry Products",
+                        "name": "Chicken, broilers or fryers, meat and skin and giblets and neck, roasted",
+                        "ndbno": "05004"
+                    },
+                    {
+                        "offset": 5,
+                        "group": "Poultry Products",
+                        "name": "Chicken, broilers or fryers, meat and skin and giblets and neck, stewed",
+                        "ndbno": "05005"
+                    },
+                    {
+                        "offset": 6,
+                        "group": "Poultry Products",
+                        "name": "Chicken, broilers or fryers, meat and skin, raw",
+                        "ndbno": "05006"
+                    },
+                    {
+                        "offset": 7,
+                        "group": "Poultry Products",
+                        "name": "Chicken, broilers or fryers, meat and skin, cooked, fried, batter",
+                        "ndbno": "05007"
+                    },
+                    {
+                        "offset": 8,
+                        "group": "Poultry Products",
+                        "name": "Chicken, broilers or fryers, meat and skin, cooked, fried, flour",
+                        "ndbno": "05008"
+                    },
+                    {
+                        "offset": 9,
+                        "group": "Poultry Products",
+                        "name": "Chicken, broilers or fryers, meat and skin, cooked, roasted",
+                        "ndbno": "05009"
+                    },
+                    {
+                        "offset": 10,
+                        "group": "Poultry Products",
+                        "name": "Chicken, broilers or fryers, meat and skin, cooked, stewed",
+                        "ndbno": "05010"
+                    },
+                    {
+                        "offset": 11,
+                        "group": "Poultry Products",
+                        "name": "Chicken, broilers or fryers, meat only, raw",
+                        "ndbno": "05011"
+                    },
+                    {
+                        "offset": 12,
+                        "group": "Poultry Products",
+                        "name": "Chicken, broilers or fryers, meat only, cooked, fried",
+                        "ndbno": "05012"
+                    },
+                    {
+                        "offset": 13,
+                        "group": "Poultry Products",
+                        "name": "Chicken, broilers or fryers, meat only, roasted",
+                        "ndbno": "05013"
+                    },
+                    {
+                        "offset": 14,
+                        "group": "Poultry Products",
+                        "name": "Chicken, broilers or fryers, meat only, stewed",
+                        "ndbno": "05014"
+                    },
+                    {
+                        "offset": 15,
+                        "group": "Poultry Products",
+                        "name": "Chicken, broilers or fryers, skin only, raw",
+                        "ndbno": "05015"
+                    },
+                    {
+                        "offset": 16,
+                        "group": "Poultry Products",
+                        "name": "Chicken, broilers or fryers, skin only, cooked, fried, batter",
+                        "ndbno": "05016"
+                    },
+                    {
+                        "offset": 17,
+                        "group": "Poultry Products",
+                        "name": "Chicken, broilers or fryers, skin only, cooked, fried, flour",
+                        "ndbno": "05017"
+                    },
+                    {
+                        "offset": 18,
+                        "group": "Poultry Products",
+                        "name": "Chicken, broilers or fryers, skin only, cooked, roasted",
+                        "ndbno": "05018"
+                    },
+                    {
+                        "offset": 19,
+                        "group": "Poultry Products",
+                        "name": "Chicken, broilers or fryers, skin only, cooked, stewed",
+                        "ndbno": "05019"
+                    },
+                    {
+                        "offset": 20,
+                        "group": "Poultry Products",
+                        "name": "Chicken, broilers or fryers, giblets, raw",
+                        "ndbno": "05020"
+                    },
+                    {
+                        "offset": 21,
+                        "group": "Poultry Products",
+                        "name": "Chicken, broilers or fryers, giblets, cooked, fried",
+                        "ndbno": "05021"
+                    },
+                    {
+                        "offset": 22,
+                        "group": "Poultry Products",
+                        "name": "Chicken, broilers or fryers, giblets, cooked, simmered",
+                        "ndbno": "05022"
+                    },
+                    {
+                        "offset": 23,
+                        "group": "Poultry Products",
+                        "name": "Chicken, gizzard, all classes, raw",
+                        "ndbno": "05023"
+                    },
+                    {
+                        "offset": 24,
+                        "group": "Poultry Products",
+                        "name": "Chicken, gizzard, all classes, cooked, simmered",
+                        "ndbno": "05024"
+                    },
+                    {
+                        "offset": 25,
+                        "group": "Poultry Products",
+                        "name": "Chicken, heart, all classes, raw",
+                        "ndbno": "05025"
+                    },
+                    {
+                        "offset": 26,
+                        "group": "Poultry Products",
+                        "name": "Chicken, heart, all classes, cooked, simmered",
+                        "ndbno": "05026"
+                    },
+                    {
+                        "offset": 27,
+                        "group": "Poultry Products",
+                        "name": "Chicken, liver, all classes, raw",
+                        "ndbno": "05027"
+                    },
+                    {
+                        "offset": 28,
+                        "group": "Poultry Products",
+                        "name": "Chicken, liver, all classes, cooked, simmered",
+                        "ndbno": "05028"
+                    },
+                    {
+                        "offset": 29,
+                        "group": "Poultry Products",
+                        "name": "Chicken, broilers or fryers, light meat, meat and skin, raw",
+                        "ndbno": "05029"
+                    },
+                    {
+                        "offset": 30,
+                        "group": "Poultry Products",
+                        "name": "Chicken, broilers or fryers, light meat, meat and skin, cooked, fried, batter",
+                        "ndbno": "05030"
+                    },
+                    {
+                        "offset": 31,
+                        "group": "Poultry Products",
+                        "name": "Chicken, broilers or fryers, light meat, meat and skin, cooked, fried, flour",
+                        "ndbno": "05031"
+                    },
+                    {
+                        "offset": 32,
+                        "group": "Poultry Products",
+                        "name": "Chicken, broilers or fryers, light meat, meat and skin, cooked, roasted",
+                        "ndbno": "05032"
+                    },
+                    {
+                        "offset": 33,
+                        "group": "Poultry Products",
+                        "name": "Chicken, broilers or fryers, light meat, meat and skin, cooked, stewed",
+                        "ndbno": "05033"
+                    },
+                    {
+                        "offset": 34,
+                        "group": "Poultry Products",
+                        "name": "Chicken, broilers or fryers, dark meat, meat and skin, raw",
+                        "ndbno": "05034"
+                    },
+                    {
+                        "offset": 35,
+                        "group": "Poultry Products",
+                        "name": "Chicken, broilers or fryers, dark meat, meat and skin, cooked, fried, batter",
+                        "ndbno": "05035"
+                    },
+                    {
+                        "offset": 36,
+                        "group": "Poultry Products",
+                        "name": "Chicken, broilers or fryers, dark meat, meat and skin, cooked, fried, flour",
+                        "ndbno": "05036"
+                    },
+                    {
+                        "offset": 37,
+                        "group": "Poultry Products",
+                        "name": "Chicken, broilers or fryers, dark meat, meat and skin, cooked, roasted",
+                        "ndbno": "05037"
+                    },
+                    {
+                        "offset": 38,
+                        "group": "Poultry Products",
+                        "name": "Chicken, broilers or fryers, dark meat, meat and skin, cooked, stewed",
+                        "ndbno": "05038"
+                    },
+                    {
+                        "offset": 39,
+                        "group": "Poultry Products",
+                        "name": "Chicken, broilers or fryers, light meat, meat only, raw",
+                        "ndbno": "05039"
+                    },
+                    {
+                        "offset": 40,
+                        "group": "Poultry Products",
+                        "name": "Chicken, broilers or fryers, light meat, meat only, cooked, fried",
+                        "ndbno": "05040"
+                    },
+                    {
+                        "offset": 41,
+                        "group": "Poultry Products",
+                        "name": "Chicken, broilers or fryers, light meat, meat only, cooked, roasted",
+                        "ndbno": "05041"
+                    },
+                    {
+                        "offset": 42,
+                        "group": "Poultry Products",
+                        "name": "Chicken, broilers or fryers, light meat, meat only, cooked, stewed",
+                        "ndbno": "05042"
+                    },
+                    {
+                        "offset": 43,
+                        "group": "Poultry Products",
+                        "name": "Chicken, broilers or fryers, dark meat, meat only, raw",
+                        "ndbno": "05043"
+                    },
+                    {
+                        "offset": 44,
+                        "group": "Poultry Products",
+                        "name": "Chicken, broilers or fryers, dark meat, meat only, cooked, fried",
+                        "ndbno": "05044"
+                    },
+                    {
+                        "offset": 45,
+                        "group": "Poultry Products",
+                        "name": "Chicken, broilers or fryers, dark meat, meat only, cooked, roasted",
+                        "ndbno": "05045"
+                    },
+                    {
+                        "offset": 46,
+                        "group": "Poultry Products",
+                        "name": "Chicken, broilers or fryers, dark meat, meat only, cooked, stewed",
+                        "ndbno": "05046"
+                    },
+                    {
+                        "offset": 47,
+                        "group": "Poultry Products",
+                        "name": "Chicken, broilers or fryers, separable fat, raw",
+                        "ndbno": "05047"
+                    },
+                    {
+                        "offset": 48,
+                        "group": "Poultry Products",
+                        "name": "Chicken, broilers or fryers, back, meat and skin, raw",
+                        "ndbno": "05048"
+                    },
+                    {
+                        "offset": 49,
+                        "group": "Poultry Products",
+                        "name": "Chicken, broilers or fryers, back, meat and skin, cooked, fried, batter",
+                        "ndbno": "05049"
+                    }
+                ]
+            }
+        }
+    http_version: 
+  recorded_at: Sat, 26 Sep 2015 21:08:39 GMT
+recorded_with: VCR 2.9.3

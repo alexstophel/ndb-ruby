@@ -5,7 +5,7 @@ require "ndb/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "ndb-ruby"
-  spec.version       = Ndb::Ruby::VERSION
+  spec.version       = NDB::VERSION
   spec.authors       = ["Alex Stophel"]
   spec.email         = ["alexstophel@gmail.com"]
 
@@ -34,6 +34,8 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "vcr"
   spec.add_development_dependency "webmock"
   spec.add_development_dependency "rspec"
+  spec.add_development_dependency "factory_girl"
+  spec.add_development_dependency "codeclimate-test-reporter"
 
   spec.add_dependency "faraday"
   spec.add_dependency "json"

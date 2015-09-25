@@ -1,0 +1,215 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.nal.usda.gov/ndb/search?api_key=DEMO_KEY&fg=&format=JSON&max=50&offset=0&q=Cheddar%20Cheese&sort=n
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Sat, 26 Sep 2015 21:08:39 GMT
+      Location:
+      - ''
+      Server:
+      - nginx
+      Set-Cookie:
+      - BIGipServerndb-pool=265882378.20480.0000; path=/
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 varnish-v4
+      X-Cache:
+      - MISS
+      X-Ratelimit-Limit:
+      - '30'
+      X-Ratelimit-Remaining:
+      - '14'
+      X-Varnish:
+      - '40105719'
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+            "list": {
+                "q": "Cheddar Cheese",
+                "sr": "27",
+                "start": 0,
+                "end": 23,
+                "total": 23,
+                "group": "",
+                "sort": "n",
+                "item": [
+                    {
+                        "offset": 0,
+                        "group": "Baked Products",
+                        "name": "AUSTIN, Cheddar Cheese on Cheese Crackers, sandwich-type",
+                        "ndbno": "18984"
+                    },
+                    {
+                        "offset": 1,
+                        "group": "Baked Products",
+                        "name": "AUSTIN, Cheddar Cheese on Cheese Crackers, sandwich-type, reduced fat",
+                        "ndbno": "18987"
+                    },
+                    {
+                        "offset": 2,
+                        "group": "Baked Products",
+                        "name": "AUSTIN, Cheddar Cheese on Wafer Crackers, sandwich-type",
+                        "ndbno": "28258"
+                    },
+                    {
+                        "offset": 3,
+                        "group": "Baked Products",
+                        "name": "AUSTIN, Cheddar Cheese on Wheat Crackers, sandwich-type",
+                        "ndbno": "18983"
+                    },
+                    {
+                        "offset": 4,
+                        "group": "Soups, Sauces, and Gravies",
+                        "name": "CAMPBELL'S, Cheddar Cheese Soup, condensed",
+                        "ndbno": "06038"
+                    },
+                    {
+                        "offset": 5,
+                        "group": "Breakfast Cereals",
+                        "name": "Cereals, QUAKER, corn grits, instant, cheddar cheese flavor, dry",
+                        "ndbno": "08094"
+                    },
+                    {
+                        "offset": 6,
+                        "group": "Dairy and Egg Products",
+                        "name": "Cheese, american cheddar, imitation",
+                        "ndbno": "43278"
+                    },
+                    {
+                        "offset": 7,
+                        "group": "Dairy and Egg Products",
+                        "name": "Cheese, cheddar",
+                        "ndbno": "01009"
+                    },
+                    {
+                        "offset": 8,
+                        "group": "Dairy and Egg Products",
+                        "name": "Cheese, cheddar, nonfat or fat free",
+                        "ndbno": "01265"
+                    },
+                    {
+                        "offset": 9,
+                        "group": "Dairy and Egg Products",
+                        "name": "Cheese, cheddar, reduced fat",
+                        "ndbno": "01260"
+                    },
+                    {
+                        "offset": 10,
+                        "group": "Dairy and Egg Products",
+                        "name": "Cheese, cheddar, sharp, sliced",
+                        "ndbno": "01270"
+                    },
+                    {
+                        "offset": 11,
+                        "group": "Dairy and Egg Products",
+                        "name": "Cheese, low fat, cheddar or colby",
+                        "ndbno": "01168"
+                    },
+                    {
+                        "offset": 12,
+                        "group": "Dairy and Egg Products",
+                        "name": "Cheese, low-sodium, cheddar or colby",
+                        "ndbno": "01169"
+                    },
+                    {
+                        "offset": 13,
+                        "group": "Dairy and Egg Products",
+                        "name": "Cheese, pasteurized process, cheddar or American, fat-free",
+                        "ndbno": "42205"
+                    },
+                    {
+                        "offset": 14,
+                        "group": "Dairy and Egg Products",
+                        "name": "Cheese, pasteurized process, cheddar or American, low sodium",
+                        "ndbno": "43398"
+                    },
+                    {
+                        "offset": 15,
+                        "group": "Dairy and Egg Products",
+                        "name": "Cheese product, pasteurized process, cheddar, reduced fat",
+                        "ndbno": "42258"
+                    },
+                    {
+                        "offset": 16,
+                        "group": "Dairy and Egg Products",
+                        "name": "Cheese spread, American or Cheddar cheese base, reduced fat",
+                        "ndbno": "01259"
+                    },
+                    {
+                        "offset": 17,
+                        "group": "Dairy and Egg Products",
+                        "name": "Imitation cheese, american or cheddar, low cholesterol",
+                        "ndbno": "42117"
+                    },
+                    {
+                        "offset": 18,
+                        "group": "Baked Products",
+                        "name": "KEEBLER, Cheese & Cheddar Sandwich Crackers",
+                        "ndbno": "28049"
+                    },
+                    {
+                        "offset": 19,
+                        "group": "Sausages and Luncheon Meats",
+                        "name": "Sausage, pork and beef, with cheddar cheese, smoked",
+                        "ndbno": "07917"
+                    },
+                    {
+                        "offset": 20,
+                        "group": "Sausages and Luncheon Meats",
+                        "name": "Sausage, summer, pork and beef, sticks, with cheddar cheese",
+                        "ndbno": "07918"
+                    },
+                    {
+                        "offset": 21,
+                        "group": "Snacks",
+                        "name": "Snacks, M&M MARS, COMBOS Snacks Cheddar Cheese Pretzel",
+                        "ndbno": "19049"
+                    },
+                    {
+                        "offset": 22,
+                        "group": "Dairy and Egg Products",
+                        "name": "USDA Commodity, cheese, cheddar, reduced fat",
+                        "ndbno": "01182"
+                    }
+                ]
+            }
+        }
+    http_version: 
+  recorded_at: Sat, 26 Sep 2015 21:08:39 GMT
+recorded_with: VCR 2.9.3
