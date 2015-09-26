@@ -1,3 +1,7 @@
+[![Code Climate](https://codeclimate.com/github/alexstophel/ndb-ruby/badges/gpa.svg)](https://codeclimate.com/github/alexstophel/ndb-ruby)
+[![Test Coverage](https://codeclimate.com/github/alexstophel/ndb-ruby/badges/coverage.svg)](https://codeclimate.com/github/alexstophel/ndb-ruby/coverage)
+[![Build Status](https://travis-ci.org/alexstophel/ndb-ruby.svg?branch=master)](https://travis-ci.org/alexstophel/ndb-ruby)
+
 # NDB-Ruby
 
 This is a simple ruby wrapper around the National Nutrient Database REST API
