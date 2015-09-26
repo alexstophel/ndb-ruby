@@ -1,6 +1,7 @@
 require_relative "ndb/version"
 require_relative "ndb/search"
 require_relative "ndb/food_report"
+require_relative "ndb/list"
 
 module NDB
   def self.configure

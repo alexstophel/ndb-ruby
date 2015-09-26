@@ -1,0 +1,326 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.nal.usda.gov/ndb/list?api_key=DEMO_KEY&format=JSON&lt=f&max=50&offset=0&sort=id
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Sat, 26 Sep 2015 23:15:00 GMT
+      Location:
+      - ''
+      Server:
+      - nginx
+      Set-Cookie:
+      - BIGipServerndb-pool=282659594.20480.0000; path=/
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 varnish-v4
+      X-Cache:
+      - MISS
+      X-Ratelimit-Limit:
+      - '30'
+      X-Ratelimit-Remaining:
+      - '25'
+      X-Varnish:
+      - '38059823'
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+            "list": {
+                "lt": "f",
+                "start": 0,
+                "end": 50,
+                "total": 50,
+                "sr": "27",
+                "sort": "id",
+                "item": [
+                    {
+                        "offset": 0,
+                        "id": "01001",
+                        "name": "Butter, salted"
+                    },
+                    {
+                        "offset": 1,
+                        "id": "01002",
+                        "name": "Butter, whipped, with salt"
+                    },
+                    {
+                        "offset": 2,
+                        "id": "01003",
+                        "name": "Butter oil, anhydrous"
+                    },
+                    {
+                        "offset": 3,
+                        "id": "01004",
+                        "name": "Cheese, blue"
+                    },
+                    {
+                        "offset": 4,
+                        "id": "01005",
+                        "name": "Cheese, brick"
+                    },
+                    {
+                        "offset": 5,
+                        "id": "01006",
+                        "name": "Cheese, brie"
+                    },
+                    {
+                        "offset": 6,
+                        "id": "01007",
+                        "name": "Cheese, camembert"
+                    },
+                    {
+                        "offset": 7,
+                        "id": "01008",
+                        "name": "Cheese, caraway"
+                    },
+                    {
+                        "offset": 8,
+                        "id": "01009",
+                        "name": "Cheese, cheddar"
+                    },
+                    {
+                        "offset": 9,
+                        "id": "01010",
+                        "name": "Cheese, cheshire"
+                    },
+                    {
+                        "offset": 10,
+                        "id": "01011",
+                        "name": "Cheese, colby"
+                    },
+                    {
+                        "offset": 11,
+                        "id": "01012",
+                        "name": "Cheese, cottage, creamed, large or small curd"
+                    },
+                    {
+                        "offset": 12,
+                        "id": "01013",
+                        "name": "Cheese, cottage, creamed, with fruit"
+                    },
+                    {
+                        "offset": 13,
+                        "id": "01014",
+                        "name": "Cheese, cottage, nonfat, uncreamed, dry, large or small curd"
+                    },
+                    {
+                        "offset": 14,
+                        "id": "01015",
+                        "name": "Cheese, cottage, lowfat, 2% milkfat"
+                    },
+                    {
+                        "offset": 15,
+                        "id": "01016",
+                        "name": "Cheese, cottage, lowfat, 1% milkfat"
+                    },
+                    {
+                        "offset": 16,
+                        "id": "01017",
+                        "name": "Cheese, cream"
+                    },
+                    {
+                        "offset": 17,
+                        "id": "01018",
+                        "name": "Cheese, edam"
+                    },
+                    {
+                        "offset": 18,
+                        "id": "01019",
+                        "name": "Cheese, feta"
+                    },
+                    {
+                        "offset": 19,
+                        "id": "01020",
+                        "name": "Cheese, fontina"
+                    },
+                    {
+                        "offset": 20,
+                        "id": "01021",
+                        "name": "Cheese, gjetost"
+                    },
+                    {
+                        "offset": 21,
+                        "id": "01022",
+                        "name": "Cheese, gouda"
+                    },
+                    {
+                        "offset": 22,
+                        "id": "01023",
+                        "name": "Cheese, gruyere"
+                    },
+                    {
+                        "offset": 23,
+                        "id": "01024",
+                        "name": "Cheese, limburger"
+                    },
+                    {
+                        "offset": 24,
+                        "id": "01025",
+                        "name": "Cheese, monterey"
+                    },
+                    {
+                        "offset": 25,
+                        "id": "01026",
+                        "name": "Cheese, mozzarella, whole milk"
+                    },
+                    {
+                        "offset": 26,
+                        "id": "01027",
+                        "name": "Cheese, mozzarella, whole milk, low moisture"
+                    },
+                    {
+                        "offset": 27,
+                        "id": "01028",
+                        "name": "Cheese, mozzarella, part skim milk"
+                    },
+                    {
+                        "offset": 28,
+                        "id": "01029",
+                        "name": "Cheese, mozzarella, low moisture, part-skim"
+                    },
+                    {
+                        "offset": 29,
+                        "id": "01030",
+                        "name": "Cheese, muenster"
+                    },
+                    {
+                        "offset": 30,
+                        "id": "01031",
+                        "name": "Cheese, neufchatel"
+                    },
+                    {
+                        "offset": 31,
+                        "id": "01032",
+                        "name": "Cheese, parmesan, grated"
+                    },
+                    {
+                        "offset": 32,
+                        "id": "01033",
+                        "name": "Cheese, parmesan, hard"
+                    },
+                    {
+                        "offset": 33,
+                        "id": "01034",
+                        "name": "Cheese, port de salut"
+                    },
+                    {
+                        "offset": 34,
+                        "id": "01035",
+                        "name": "Cheese, provolone"
+                    },
+                    {
+                        "offset": 35,
+                        "id": "01036",
+                        "name": "Cheese, ricotta, whole milk"
+                    },
+                    {
+                        "offset": 36,
+                        "id": "01037",
+                        "name": "Cheese, ricotta, part skim milk"
+                    },
+                    {
+                        "offset": 37,
+                        "id": "01038",
+                        "name": "Cheese, romano"
+                    },
+                    {
+                        "offset": 38,
+                        "id": "01039",
+                        "name": "Cheese, roquefort"
+                    },
+                    {
+                        "offset": 39,
+                        "id": "01040",
+                        "name": "Cheese, swiss"
+                    },
+                    {
+                        "offset": 40,
+                        "id": "01041",
+                        "name": "Cheese, tilsit"
+                    },
+                    {
+                        "offset": 41,
+                        "id": "01042",
+                        "name": "Cheese, pasteurized process, American, fortified with vitamin D"
+                    },
+                    {
+                        "offset": 42,
+                        "id": "01043",
+                        "name": "Cheese, pasteurized process, pimento"
+                    },
+                    {
+                        "offset": 43,
+                        "id": "01044",
+                        "name": "Cheese, pasteurized process, swiss"
+                    },
+                    {
+                        "offset": 44,
+                        "id": "01045",
+                        "name": "Cheese food, cold pack, American"
+                    },
+                    {
+                        "offset": 45,
+                        "id": "01046",
+                        "name": "Cheese food, pasteurized process, American, vitamin D fortified"
+                    },
+                    {
+                        "offset": 46,
+                        "id": "01047",
+                        "name": "Cheese food, pasteurized process, swiss"
+                    },
+                    {
+                        "offset": 47,
+                        "id": "01048",
+                        "name": "Cheese spread, pasteurized process, American"
+                    },
+                    {
+                        "offset": 48,
+                        "id": "01049",
+                        "name": "Cream, fluid, half and half"
+                    },
+                    {
+                        "offset": 49,
+                        "id": "01050",
+                        "name": "Cream, fluid, light (coffee cream or table cream)"
+                    }
+                ]
+            }
+        }
+    http_version: 
+  recorded_at: Sat, 26 Sep 2015 23:15:00 GMT
+recorded_with: VCR 2.9.3

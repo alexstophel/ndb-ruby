@@ -24,20 +24,32 @@ end
 
 ## Search
 
-The Search request is wrapped in a simple ```.perform``` method on NDB::Search
-and can be used like so:
+The Search request is wrapped in a simple ```.perform``` method on
+```NDB::Search``` and can be used like so:
 
 ```ruby
-NDB::Search.perform({q: "butter"})
+NDB::Search.perform(q: "butter")
 ```
 
 It takes all of the options mentioned in the Search API documentation, except
 the format option.
 
+## List
+
+The List request is wrapped in a simple ```.retrieve``` method on
+```NDB::List``` and can be used like so:
+
+```ruby
+NDB::List.retrieve(lt: "n")
+```
+
+It takes all of the options mentioned in the List API documentation, except for
+the format option.
+
 ## Food Report
 
 The Food Report request is wrapped in a simple ```.retrieve``` method on
-NDB::FoodReport and can be used like so:
+```NDB::FoodReport``` and can be used like so:
 
 ```ruby
 NDB::FoodReport.retrieve(ndbno: "01009", type: "b")

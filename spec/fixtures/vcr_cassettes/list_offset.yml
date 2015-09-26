@@ -1,0 +1,326 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.nal.usda.gov/ndb/list?api_key=DEMO_KEY&format=JSON&lt=f&max=50&offset=1&sort=n
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Sat, 26 Sep 2015 23:13:21 GMT
+      Location:
+      - ''
+      Server:
+      - nginx
+      Set-Cookie:
+      - BIGipServerndb-pool=282659594.20480.0000; path=/
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 varnish-v4
+      X-Cache:
+      - MISS
+      X-Ratelimit-Limit:
+      - '30'
+      X-Ratelimit-Remaining:
+      - '26'
+      X-Varnish:
+      - '38059606'
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+            "list": {
+                "lt": "f",
+                "start": 1,
+                "end": 50,
+                "total": 50,
+                "sr": "27",
+                "sort": "n",
+                "item": [
+                    {
+                        "offset": 1,
+                        "id": "09002",
+                        "name": "Acerola juice, raw"
+                    },
+                    {
+                        "offset": 2,
+                        "id": "09001",
+                        "name": "Acerola, (west indian cherry), raw"
+                    },
+                    {
+                        "offset": 3,
+                        "id": "35182",
+                        "name": "Acorn stew (Apache)"
+                    },
+                    {
+                        "offset": 4,
+                        "id": "35193",
+                        "name": "Agave, cooked (Southwest)"
+                    },
+                    {
+                        "offset": 5,
+                        "id": "35194",
+                        "name": "Agave, dried (Southwest)"
+                    },
+                    {
+                        "offset": 6,
+                        "id": "35192",
+                        "name": "Agave, raw (Southwest)"
+                    },
+                    {
+                        "offset": 7,
+                        "id": "35225",
+                        "name": "Agutuk, fish with shortening (Alaskan ice cream) (Alaska Native)"
+                    },
+                    {
+                        "offset": 8,
+                        "id": "35001",
+                        "name": "Agutuk, fish/berry with seal oil (Alaskan ice cream) (Alaska Native)"
+                    },
+                    {
+                        "offset": 9,
+                        "id": "35003",
+                        "name": "Agutuk, meat-caribou (Alaskan ice cream) (Alaska Native)"
+                    },
+                    {
+                        "offset": 10,
+                        "id": "14006",
+                        "name": "Alcoholic beverage, beer, light"
+                    },
+                    {
+                        "offset": 11,
+                        "id": "14007",
+                        "name": "Alcoholic beverage, beer, light, BUD LIGHT"
+                    },
+                    {
+                        "offset": 12,
+                        "id": "14005",
+                        "name": "Alcoholic beverage, beer, light, BUDWEISER SELECT"
+                    },
+                    {
+                        "offset": 13,
+                        "id": "14013",
+                        "name": "Alcoholic beverage, beer, light, MICHELOB ULTRA"
+                    },
+                    {
+                        "offset": 14,
+                        "id": "14003",
+                        "name": "Alcoholic beverage, beer, regular, all"
+                    },
+                    {
+                        "offset": 15,
+                        "id": "14004",
+                        "name": "Alcoholic beverage, beer, regular, BUDWEISER"
+                    },
+                    {
+                        "offset": 16,
+                        "id": "14034",
+                        "name": "Alcoholic beverage, creme de menthe, 72 proof"
+                    },
+                    {
+                        "offset": 17,
+                        "id": "14009",
+                        "name": "Alcoholic beverage, daiquiri, canned"
+                    },
+                    {
+                        "offset": 18,
+                        "id": "14010",
+                        "name": "Alcoholic beverage, daiquiri, prepared-from-recipe"
+                    },
+                    {
+                        "offset": 19,
+                        "id": "14533",
+                        "name": "Alcoholic beverage, distilled, all (gin, rum, vodka, whiskey) 100 proof"
+                    },
+                    {
+                        "offset": 20,
+                        "id": "14037",
+                        "name": "Alcoholic beverage, distilled, all (gin, rum, vodka, whiskey) 80 proof"
+                    },
+                    {
+                        "offset": 21,
+                        "id": "14550",
+                        "name": "Alcoholic beverage, distilled, all (gin, rum, vodka, whiskey) 86 proof"
+                    },
+                    {
+                        "offset": 22,
+                        "id": "14551",
+                        "name": "Alcoholic beverage, distilled, all (gin, rum, vodka, whiskey) 90 proof"
+                    },
+                    {
+                        "offset": 23,
+                        "id": "14532",
+                        "name": "Alcoholic beverage, distilled, all (gin, rum, vodka, whiskey) 94 proof"
+                    },
+                    {
+                        "offset": 24,
+                        "id": "14049",
+                        "name": "Alcoholic beverage, distilled, gin, 90 proof"
+                    },
+                    {
+                        "offset": 25,
+                        "id": "14050",
+                        "name": "Alcoholic beverage, distilled, rum, 80 proof"
+                    },
+                    {
+                        "offset": 26,
+                        "id": "14051",
+                        "name": "Alcoholic beverage, distilled, vodka, 80 proof"
+                    },
+                    {
+                        "offset": 27,
+                        "id": "14052",
+                        "name": "Alcoholic beverage, distilled, whiskey, 86 proof"
+                    },
+                    {
+                        "offset": 28,
+                        "id": "14415",
+                        "name": "Alcoholic beverage, liqueur, coffee with cream, 34 proof"
+                    },
+                    {
+                        "offset": 29,
+                        "id": "14414",
+                        "name": "Alcoholic beverage, liqueur, coffee, 53 proof"
+                    },
+                    {
+                        "offset": 30,
+                        "id": "14534",
+                        "name": "Alcoholic beverage, liqueur, coffee, 63 proof"
+                    },
+                    {
+                        "offset": 31,
+                        "id": "14015",
+                        "name": "Alcoholic beverage, pina colada, canned"
+                    },
+                    {
+                        "offset": 32,
+                        "id": "14017",
+                        "name": "Alcoholic beverage, pina colada, prepared-from-recipe"
+                    },
+                    {
+                        "offset": 33,
+                        "id": "43479",
+                        "name": "Alcoholic beverage, rice (sake)"
+                    },
+                    {
+                        "offset": 34,
+                        "id": "14019",
+                        "name": "Alcoholic beverage, tequila sunrise, canned"
+                    },
+                    {
+                        "offset": 35,
+                        "id": "14027",
+                        "name": "Alcoholic beverage, whiskey sour, canned"
+                    },
+                    {
+                        "offset": 36,
+                        "id": "14029",
+                        "name": "Alcoholic beverage, whiskey sour, prepared from item 14028"
+                    },
+                    {
+                        "offset": 37,
+                        "id": "14025",
+                        "name": "Alcoholic beverage, whiskey sour, prepared with water, whiskey and powder mix"
+                    },
+                    {
+                        "offset": 38,
+                        "id": "43154",
+                        "name": "Alcoholic beverage, wine, cooking"
+                    },
+                    {
+                        "offset": 39,
+                        "id": "14536",
+                        "name": "Alcoholic beverage, wine, dessert, dry"
+                    },
+                    {
+                        "offset": 40,
+                        "id": "14057",
+                        "name": "Alcoholic beverage, wine, dessert, sweet"
+                    },
+                    {
+                        "offset": 41,
+                        "id": "43155",
+                        "name": "Alcoholic beverage, wine, light"
+                    },
+                    {
+                        "offset": 42,
+                        "id": "14084",
+                        "name": "Alcoholic beverage, wine, table, all"
+                    },
+                    {
+                        "offset": 43,
+                        "id": "14096",
+                        "name": "Alcoholic beverage, wine, table, red"
+                    },
+                    {
+                        "offset": 44,
+                        "id": "14101",
+                        "name": "Alcoholic Beverage, wine, table, red, Barbera"
+                    },
+                    {
+                        "offset": 45,
+                        "id": "14152",
+                        "name": "Alcoholic Beverage, wine, table, red, Burgundy"
+                    },
+                    {
+                        "offset": 46,
+                        "id": "14098",
+                        "name": "Alcoholic Beverage, wine, table, red, Cabernet Franc"
+                    },
+                    {
+                        "offset": 47,
+                        "id": "14097",
+                        "name": "Alcoholic Beverage, wine, table, red, Cabernet Sauvignon"
+                    },
+                    {
+                        "offset": 48,
+                        "id": "14109",
+                        "name": "Alcoholic Beverage, wine, table, red, Carignane"
+                    },
+                    {
+                        "offset": 49,
+                        "id": "14105",
+                        "name": "Alcoholic Beverage, wine, table, red, Claret"
+                    },
+                    {
+                        "offset": 50,
+                        "id": "14158",
+                        "name": "Alcoholic Beverage, wine, table, red, Gamay"
+                    }
+                ]
+            }
+        }
+    http_version: 
+  recorded_at: Sat, 26 Sep 2015 23:13:21 GMT
+recorded_with: VCR 2.9.3

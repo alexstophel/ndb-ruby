@@ -1,0 +1,326 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.nal.usda.gov/ndb/list?api_key=DEMO_KEY&format=JSON&lt=n&max=50&offset=0&sort=n
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Sat, 26 Sep 2015 23:17:35 GMT
+      Location:
+      - ''
+      Server:
+      - nginx
+      Set-Cookie:
+      - BIGipServerndb-pool=265882378.20480.0000; path=/
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 varnish-v4
+      X-Cache:
+      - MISS
+      X-Ratelimit-Limit:
+      - '30'
+      X-Ratelimit-Remaining:
+      - '22'
+      X-Varnish:
+      - '38060284'
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+            "list": {
+                "lt": "n",
+                "start": 0,
+                "end": 50,
+                "total": 190,
+                "sr": "27",
+                "sort": "n",
+                "item": [
+                    {
+                        "offset": 0,
+                        "id": "749",
+                        "name": "(+)-Catechin"
+                    },
+                    {
+                        "offset": 1,
+                        "id": "794",
+                        "name": "(+)-Gallocatechin"
+                    },
+                    {
+                        "offset": 2,
+                        "id": "796",
+                        "name": "(+)-Gallocatechin 3-gallate"
+                    },
+                    {
+                        "offset": 3,
+                        "id": "751",
+                        "name": "(-)-Epicatechin"
+                    },
+                    {
+                        "offset": 4,
+                        "id": "752",
+                        "name": "(-)-Epicatechin 3-gallate"
+                    },
+                    {
+                        "offset": 5,
+                        "id": "750",
+                        "name": "(-)-Epigallocatechin"
+                    },
+                    {
+                        "offset": 6,
+                        "id": "753",
+                        "name": "(-)-Epigallocatechin 3-gallate"
+                    },
+                    {
+                        "offset": 7,
+                        "id": "610",
+                        "name": "10:0"
+                    },
+                    {
+                        "offset": 8,
+                        "id": "611",
+                        "name": "12:0"
+                    },
+                    {
+                        "offset": 9,
+                        "id": "696",
+                        "name": "13:0"
+                    },
+                    {
+                        "offset": 10,
+                        "id": "612",
+                        "name": "14:0"
+                    },
+                    {
+                        "offset": 11,
+                        "id": "625",
+                        "name": "14:1"
+                    },
+                    {
+                        "offset": 12,
+                        "id": "652",
+                        "name": "15:0"
+                    },
+                    {
+                        "offset": 13,
+                        "id": "697",
+                        "name": "15:1"
+                    },
+                    {
+                        "offset": 14,
+                        "id": "613",
+                        "name": "16:0"
+                    },
+                    {
+                        "offset": 15,
+                        "id": "673",
+                        "name": "16:1 c"
+                    },
+                    {
+                        "offset": 16,
+                        "id": "662",
+                        "name": "16:1 t"
+                    },
+                    {
+                        "offset": 17,
+                        "id": "626",
+                        "name": "16:1 undifferentiated"
+                    },
+                    {
+                        "offset": 18,
+                        "id": "653",
+                        "name": "17:0"
+                    },
+                    {
+                        "offset": 19,
+                        "id": "687",
+                        "name": "17:1"
+                    },
+                    {
+                        "offset": 20,
+                        "id": "614",
+                        "name": "18:0"
+                    },
+                    {
+                        "offset": 21,
+                        "id": "674",
+                        "name": "18:1 c"
+                    },
+                    {
+                        "offset": 22,
+                        "id": "663",
+                        "name": "18:1 t"
+                    },
+                    {
+                        "offset": 23,
+                        "id": "617",
+                        "name": "18:1 undifferentiated"
+                    },
+                    {
+                        "offset": 24,
+                        "id": "859",
+                        "name": "18:1-11 t (18:1t n-7)"
+                    },
+                    {
+                        "offset": 25,
+                        "id": "670",
+                        "name": "18:2 CLAs"
+                    },
+                    {
+                        "offset": 26,
+                        "id": "666",
+                        "name": "18:2 i"
+                    },
+                    {
+                        "offset": 27,
+                        "id": "675",
+                        "name": "18:2 n-6 c,c"
+                    },
+                    {
+                        "offset": 28,
+                        "id": "665",
+                        "name": "18:2 t not further defined"
+                    },
+                    {
+                        "offset": 29,
+                        "id": "669",
+                        "name": "18:2 t,t"
+                    },
+                    {
+                        "offset": 30,
+                        "id": "618",
+                        "name": "18:2 undifferentiated"
+                    },
+                    {
+                        "offset": 31,
+                        "id": "851",
+                        "name": "18:3 n-3 c,c,c (ALA)"
+                    },
+                    {
+                        "offset": 32,
+                        "id": "685",
+                        "name": "18:3 n-6 c,c,c"
+                    },
+                    {
+                        "offset": 33,
+                        "id": "619",
+                        "name": "18:3 undifferentiated"
+                    },
+                    {
+                        "offset": 34,
+                        "id": "856",
+                        "name": "18:3i"
+                    },
+                    {
+                        "offset": 35,
+                        "id": "627",
+                        "name": "18:4"
+                    },
+                    {
+                        "offset": 36,
+                        "id": "615",
+                        "name": "20:0"
+                    },
+                    {
+                        "offset": 37,
+                        "id": "628",
+                        "name": "20:1"
+                    },
+                    {
+                        "offset": 38,
+                        "id": "672",
+                        "name": "20:2 n-6 c,c"
+                    },
+                    {
+                        "offset": 39,
+                        "id": "852",
+                        "name": "20:3 n-3"
+                    },
+                    {
+                        "offset": 40,
+                        "id": "853",
+                        "name": "20:3 n-6"
+                    },
+                    {
+                        "offset": 41,
+                        "id": "689",
+                        "name": "20:3 undifferentiated"
+                    },
+                    {
+                        "offset": 42,
+                        "id": "855",
+                        "name": "20:4 n-6"
+                    },
+                    {
+                        "offset": 43,
+                        "id": "620",
+                        "name": "20:4 undifferentiated"
+                    },
+                    {
+                        "offset": 44,
+                        "id": "629",
+                        "name": "20:5 n-3 (EPA)"
+                    },
+                    {
+                        "offset": 45,
+                        "id": "857",
+                        "name": "21:5"
+                    },
+                    {
+                        "offset": 46,
+                        "id": "624",
+                        "name": "22:0"
+                    },
+                    {
+                        "offset": 47,
+                        "id": "676",
+                        "name": "22:1 c"
+                    },
+                    {
+                        "offset": 48,
+                        "id": "664",
+                        "name": "22:1 t"
+                    },
+                    {
+                        "offset": 49,
+                        "id": "630",
+                        "name": "22:1 undifferentiated"
+                    }
+                ]
+            }
+        }
+    http_version: 
+  recorded_at: Sat, 26 Sep 2015 23:17:35 GMT
+recorded_with: VCR 2.9.3
