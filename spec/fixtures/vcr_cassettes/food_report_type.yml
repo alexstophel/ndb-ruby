@@ -1,0 +1,1280 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.nal.usda.gov/ndb/reports?api_key=DEMO_KEY&ndbno=01009&type=s
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Sat, 26 Sep 2015 21:34:42 GMT
+      Location:
+      - ''
+      Server:
+      - nginx
+      Set-Cookie:
+      - BIGipServerndb-pool=282659594.20480.0000; path=/
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 varnish-v4
+      X-Cache:
+      - MISS
+      X-Ratelimit-Limit:
+      - '30'
+      X-Ratelimit-Remaining:
+      - '8'
+      X-Varnish:
+      - '42048021'
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"report\": {\n        \"sr\": \"27\",\n        \"type\": \"Statistics\",\n
+        \       \"food\": {\n            \"ndbno\": \"01009\",\n            \"name\":
+        \"Cheese, cheddar\",\n            \"nutrients\": [\n                {\n                    \"nutrient_id\":
+        \"255\",\n                    \"name\": \"Water\",\n                    \"group\":
+        \"Proximates\",\n                    \"unit\": \"g\",\n                    \"value\":
+        \"37.10\",\n                    \"sourcecode\": [\n                        1,\n
+        \                       2\n                    ],\n                    \"dp\":
+        24,\n                    \"se\": \"0.280\",\n                    \"min\":
+        32.75,\n                    \"max\": 39.08,\n                    \"df\": 5.0,\n
+        \                   \"lb\": 36.37,\n                    \"ub\": 37.838,\n
+        \                   \"nstudies\": 2,\n                    \"sc\": \"Analytical
+        or derived from analytical\",\n                    \"refndb\": \"\",\n                    \"lm\":
+        \"2014-08-01T04:00:00+0000\"\n                },\n                {\n                    \"nutrient_id\":
+        \"208\",\n                    \"name\": \"Energy\",\n                    \"group\":
+        \"Proximates\",\n                    \"unit\": \"kcal\",\n                    \"value\":
+        \"406\",\n                    \"sourcecode\": \"\",\n                    \"dp\":
+        \"\",\n                    \"se\": \"\",\n                    \"min\": null,\n
+        \                   \"max\": null,\n                    \"df\": 0.0,\n                    \"lb\":
+        0.0,\n                    \"ub\": 0.0,\n                    \"nstudies\":
+        0,\n                    \"sc\": \"Calculated or imputed\",\n                    \"refndb\":
+        \"\",\n                    \"lm\": \"2014-08-01T04:00:00+0000\"\n                },\n
+        \               {\n                    \"nutrient_id\": \"268\",\n                    \"name\":
+        \"Energy\",\n                    \"group\": \"Proximates\",\n                    \"unit\":
+        \"kJ\",\n                    \"value\": \"1698\",\n                    \"sourcecode\":
+        \"\",\n                    \"dp\": \"\",\n                    \"se\": \"\",\n
+        \                   \"min\": null,\n                    \"max\": null,\n                    \"df\":
+        0.0,\n                    \"lb\": 0.0,\n                    \"ub\": 0.0,\n
+        \                   \"nstudies\": 0,\n                    \"sc\": \"Calculated
+        or imputed\",\n                    \"refndb\": \"\",\n                    \"lm\":
+        \"2014-08-01T04:00:00+0000\"\n                },\n                {\n                    \"nutrient_id\":
+        \"203\",\n                    \"name\": \"Protein\",\n                    \"group\":
+        \"Proximates\",\n                    \"unit\": \"g\",\n                    \"value\":
+        \"24.04\",\n                    \"sourcecode\": [\n                        1,\n
+        \                       2\n                    ],\n                    \"dp\":
+        24,\n                    \"se\": \"0.230\",\n                    \"min\":
+        21.95,\n                    \"max\": 25.58,\n                    \"df\": 6.0,\n
+        \                   \"lb\": 23.468,\n                    \"ub\": 24.614,\n
+        \                   \"nstudies\": 2,\n                    \"sc\": \"Analytical
+        or derived from analytical\",\n                    \"refndb\": \"\",\n                    \"lm\":
+        \"2014-08-01T04:00:00+0000\"\n                },\n                {\n                    \"nutrient_id\":
+        \"204\",\n                    \"name\": \"Total lipid (fat)\",\n                    \"group\":
+        \"Proximates\",\n                    \"unit\": \"g\",\n                    \"value\":
+        \"33.82\",\n                    \"sourcecode\": [\n                        1\n
+        \                   ],\n                    \"dp\": 18,\n                    \"se\":
+        \"0.102\",\n                    \"min\": 32.81,\n                    \"max\":
+        37.59,\n                    \"df\": 11.0,\n                    \"lb\": 33.595,\n
+        \                   \"ub\": 34.045,\n                    \"nstudies\": 1,\n
+        \                   \"sc\": \"Analytical or derived from analytical\",\n                    \"refndb\":
+        \"\",\n                    \"lm\": \"2014-08-01T04:00:00+0000\"\n                },\n
+        \               {\n                    \"nutrient_id\": \"207\",\n                    \"name\":
+        \"Ash\",\n                    \"group\": \"Proximates\",\n                    \"unit\":
+        \"g\",\n                    \"value\": \"3.71\",\n                    \"sourcecode\":
+        [\n                        1,\n                        2\n                    ],\n
+        \                   \"dp\": 24,\n                    \"se\": \"0.049\",\n
+        \                   \"min\": 3.41,\n                    \"max\": 3.98,\n                    \"df\":
+        8.0,\n                    \"lb\": 3.594,\n                    \"ub\": 3.823,\n
+        \                   \"nstudies\": 2,\n                    \"sc\": \"Analytical
+        or derived from analytical\",\n                    \"refndb\": \"\",\n                    \"lm\":
+        \"2014-08-01T04:00:00+0000\"\n                },\n                {\n                    \"nutrient_id\":
+        \"205\",\n                    \"name\": \"Carbohydrate, by difference\",\n
+        \                   \"group\": \"Proximates\",\n                    \"unit\":
+        \"g\",\n                    \"value\": \"1.33\",\n                    \"sourcecode\":
+        \"\",\n                    \"dp\": \"\",\n                    \"se\": \"\",\n
+        \                   \"min\": null,\n                    \"max\": null,\n                    \"df\":
+        0.0,\n                    \"lb\": 0.0,\n                    \"ub\": 0.0,\n
+        \                   \"nstudies\": 0,\n                    \"sc\": \"Calculated
+        or imputed\",\n                    \"refndb\": \"\",\n                    \"lm\":
+        \"2014-08-01T04:00:00+0000\"\n                },\n                {\n                    \"nutrient_id\":
+        \"291\",\n                    \"name\": \"Fiber, total dietary\",\n                    \"group\":
+        \"Proximates\",\n                    \"unit\": \"g\",\n                    \"value\":
+        \"0.0\",\n                    \"sourcecode\": \"\",\n                    \"dp\":
+        \"\",\n                    \"se\": \"\",\n                    \"min\": null,\n
+        \                   \"max\": null,\n                    \"df\": 0.0,\n                    \"lb\":
+        0.0,\n                    \"ub\": 0.0,\n                    \"nstudies\":
+        0,\n                    \"sc\": \"Calculated or imputed\",\n                    \"refndb\":
+        \"\",\n                    \"lm\": \"1976-11-01T05:00:00+0000\"\n                },\n
+        \               {\n                    \"nutrient_id\": \"269\",\n                    \"name\":
+        \"Sugars, total\",\n                    \"group\": \"Proximates\",\n                    \"unit\":
+        \"g\",\n                    \"value\": \"0.28\",\n                    \"sourcecode\":
+        [\n                        1\n                    ],\n                    \"dp\":
+        4,\n                    \"se\": \"\",\n                    \"min\": 0.26,\n
+        \                   \"max\": 0.29,\n                    \"df\": 0.0,\n                    \"lb\":
+        0.0,\n                    \"ub\": 0.0,\n                    \"nstudies\":
+        1,\n                    \"sc\": \"Analytical or derived from analytical\",\n
+        \                   \"refndb\": \"\",\n                    \"lm\": \"2014-08-01T04:00:00+0000\"\n
+        \               },\n                {\n                    \"nutrient_id\":
+        \"210\",\n                    \"name\": \"Sucrose\",\n                    \"group\":
+        \"Proximates\",\n                    \"unit\": \"g\",\n                    \"value\":
+        \"0.00\",\n                    \"sourcecode\": [\n                        1\n
+        \                   ],\n                    \"dp\": 4,\n                    \"se\":
+        \"\",\n                    \"min\": 0.0,\n                    \"max\": 0.0,\n
+        \                   \"df\": 0.0,\n                    \"lb\": 0.0,\n                    \"ub\":
+        0.0,\n                    \"nstudies\": 1,\n                    \"sc\": \"Analytical
+        or derived from analytical\",\n                    \"refndb\": \"\",\n                    \"lm\":
+        \"2014-08-01T04:00:00+0000\"\n                },\n                {\n                    \"nutrient_id\":
+        \"211\",\n                    \"name\": \"Glucose (dextrose)\",\n                    \"group\":
+        \"Proximates\",\n                    \"unit\": \"g\",\n                    \"value\":
+        \"0.00\",\n                    \"sourcecode\": [\n                        1\n
+        \                   ],\n                    \"dp\": 4,\n                    \"se\":
+        \"\",\n                    \"min\": 0.0,\n                    \"max\": 0.0,\n
+        \                   \"df\": 0.0,\n                    \"lb\": 0.0,\n                    \"ub\":
+        0.0,\n                    \"nstudies\": 1,\n                    \"sc\": \"Analytical
+        or derived from analytical\",\n                    \"refndb\": \"\",\n                    \"lm\":
+        \"2014-05-01T04:00:00+0000\"\n                },\n                {\n                    \"nutrient_id\":
+        \"212\",\n                    \"name\": \"Fructose\",\n                    \"group\":
+        \"Proximates\",\n                    \"unit\": \"g\",\n                    \"value\":
+        \"0.00\",\n                    \"sourcecode\": [\n                        1\n
+        \                   ],\n                    \"dp\": 4,\n                    \"se\":
+        \"\",\n                    \"min\": 0.0,\n                    \"max\": 0.0,\n
+        \                   \"df\": 0.0,\n                    \"lb\": 0.0,\n                    \"ub\":
+        0.0,\n                    \"nstudies\": 1,\n                    \"sc\": \"Analytical
+        or derived from analytical\",\n                    \"refndb\": \"\",\n                    \"lm\":
+        \"2014-08-01T04:00:00+0000\"\n                },\n                {\n                    \"nutrient_id\":
+        \"213\",\n                    \"name\": \"Lactose\",\n                    \"group\":
+        \"Proximates\",\n                    \"unit\": \"g\",\n                    \"value\":
+        \"0.18\",\n                    \"sourcecode\": [\n                        1\n
+        \                   ],\n                    \"dp\": 4,\n                    \"se\":
+        \"\",\n                    \"min\": 0.18,\n                    \"max\": 0.18,\n
+        \                   \"df\": 0.0,\n                    \"lb\": 0.0,\n                    \"ub\":
+        0.0,\n                    \"nstudies\": 1,\n                    \"sc\": \"Analytical
+        or derived from analytical\",\n                    \"refndb\": \"\",\n                    \"lm\":
+        \"2014-08-01T04:00:00+0000\"\n                },\n                {\n                    \"nutrient_id\":
+        \"214\",\n                    \"name\": \"Maltose\",\n                    \"group\":
+        \"Proximates\",\n                    \"unit\": \"g\",\n                    \"value\":
+        \"0.00\",\n                    \"sourcecode\": [\n                        1\n
+        \                   ],\n                    \"dp\": 4,\n                    \"se\":
+        \"\",\n                    \"min\": 0.0,\n                    \"max\": 0.0,\n
+        \                   \"df\": 0.0,\n                    \"lb\": 0.0,\n                    \"ub\":
+        0.0,\n                    \"nstudies\": 1,\n                    \"sc\": \"Analytical
+        or derived from analytical\",\n                    \"refndb\": \"\",\n                    \"lm\":
+        \"2014-08-01T04:00:00+0000\"\n                },\n                {\n                    \"nutrient_id\":
+        \"287\",\n                    \"name\": \"Galactose\",\n                    \"group\":
+        \"Proximates\",\n                    \"unit\": \"g\",\n                    \"value\":
+        \"0.10\",\n                    \"sourcecode\": [\n                        1\n
+        \                   ],\n                    \"dp\": 4,\n                    \"se\":
+        \"\",\n                    \"min\": 0.07,\n                    \"max\": 0.11,\n
+        \                   \"df\": 0.0,\n                    \"lb\": 0.0,\n                    \"ub\":
+        0.0,\n                    \"nstudies\": 1,\n                    \"sc\": \"Analytical
+        or derived from analytical\",\n                    \"refndb\": \"\",\n                    \"lm\":
+        \"2014-08-01T04:00:00+0000\"\n                },\n                {\n                    \"nutrient_id\":
+        \"301\",\n                    \"name\": \"Calcium, Ca\",\n                    \"group\":
+        \"Minerals\",\n                    \"unit\": \"mg\",\n                    \"value\":
+        \"675\",\n                    \"sourcecode\": [\n                        1,\n
+        \                       2\n                    ],\n                    \"dp\":
+        24,\n                    \"se\": \"5.257\",\n                    \"min\":
+        608.0,\n                    \"max\": 747.0,\n                    \"df\": 7.0,\n
+        \                   \"lb\": 662.738,\n                    \"ub\": 687.511,\n
+        \                   \"nstudies\": 2,\n                    \"sc\": \"Analytical
+        or derived from analytical\",\n                    \"refndb\": \"\",\n                    \"lm\":
+        \"2014-08-01T04:00:00+0000\"\n                },\n                {\n                    \"nutrient_id\":
+        \"303\",\n                    \"name\": \"Iron, Fe\",\n                    \"group\":
+        \"Minerals\",\n                    \"unit\": \"mg\",\n                    \"value\":
+        \"0.16\",\n                    \"sourcecode\": [\n                        1\n
+        \                   ],\n                    \"dp\": 18,\n                    \"se\":
+        \"0.008\",\n                    \"min\": 0.11,\n                    \"max\":
+        0.28,\n                    \"df\": 7.0,\n                    \"lb\": 0.143,\n
+        \                   \"ub\": 0.179,\n                    \"nstudies\": 1,\n
+        \                   \"sc\": \"Analytical or derived from analytical\",\n                    \"refndb\":
+        \"\",\n                    \"lm\": \"2014-08-01T04:00:00+0000\"\n                },\n
+        \               {\n                    \"nutrient_id\": \"304\",\n                    \"name\":
+        \"Magnesium, Mg\",\n                    \"group\": \"Minerals\",\n                    \"unit\":
+        \"mg\",\n                    \"value\": \"27\",\n                    \"sourcecode\":
+        [\n                        1,\n                        2\n                    ],\n
+        \                   \"dp\": 24,\n                    \"se\": \"0.323\",\n
+        \                   \"min\": 24.0,\n                    \"max\": 30.0,\n                    \"df\":
+        9.0,\n                    \"lb\": 25.899,\n                    \"ub\": 27.374,\n
+        \                   \"nstudies\": 2,\n                    \"sc\": \"Analytical
+        or derived from analytical\",\n                    \"refndb\": \"\",\n                    \"lm\":
+        \"2014-08-01T04:00:00+0000\"\n                },\n                {\n                    \"nutrient_id\":
+        \"305\",\n                    \"name\": \"Phosphorus, P\",\n                    \"group\":
+        \"Minerals\",\n                    \"unit\": \"mg\",\n                    \"value\":
+        \"473\",\n                    \"sourcecode\": [\n                        1,\n
+        \                       2\n                    ],\n                    \"dp\":
+        24,\n                    \"se\": \"4.559\",\n                    \"min\":
+        423.0,\n                    \"max\": 503.0,\n                    \"df\": 8.0,\n
+        \                   \"lb\": 462.21,\n                    \"ub\": 483.2,\n
+        \                   \"nstudies\": 2,\n                    \"sc\": \"Analytical
+        or derived from analytical\",\n                    \"refndb\": \"\",\n                    \"lm\":
+        \"2014-08-01T04:00:00+0000\"\n                },\n                {\n                    \"nutrient_id\":
+        \"306\",\n                    \"name\": \"Potassium, K\",\n                    \"group\":
+        \"Minerals\",\n                    \"unit\": \"mg\",\n                    \"value\":
+        \"76\",\n                    \"sourcecode\": [\n                        1\n
+        \                   ],\n                    \"dp\": 18,\n                    \"se\":
+        \"4.993\",\n                    \"min\": 58.0,\n                    \"max\":
+        94.0,\n                    \"df\": 3.0,\n                    \"lb\": 59.919,\n
+        \                   \"ub\": 91.111,\n                    \"nstudies\": 1,\n
+        \                   \"sc\": \"Analytical or derived from analytical\",\n                    \"refndb\":
+        \"\",\n                    \"lm\": \"2014-08-01T04:00:00+0000\"\n                },\n
+        \               {\n                    \"nutrient_id\": \"307\",\n                    \"name\":
+        \"Sodium, Na\",\n                    \"group\": \"Minerals\",\n                    \"unit\":
+        \"mg\",\n                    \"value\": \"644\",\n                    \"sourcecode\":
+        [\n                        1\n                    ],\n                    \"dp\":
+        18,\n                    \"se\": \"11.977\",\n                    \"min\":
+        587.0,\n                    \"max\": 699.0,\n                    \"df\": 3.0,\n
+        \                   \"lb\": 608.007,\n                    \"ub\": 680.433,\n
+        \                   \"nstudies\": 1,\n                    \"sc\": \"Analytical
+        or derived from analytical\",\n                    \"refndb\": \"\",\n                    \"lm\":
+        \"2014-08-01T04:00:00+0000\"\n                },\n                {\n                    \"nutrient_id\":
+        \"309\",\n                    \"name\": \"Zinc, Zn\",\n                    \"group\":
+        \"Minerals\",\n                    \"unit\": \"mg\",\n                    \"value\":
+        \"3.43\",\n                    \"sourcecode\": [\n                        1,\n
+        \                       2\n                    ],\n                    \"dp\":
+        24,\n                    \"se\": \"0.028\",\n                    \"min\":
+        2.92,\n                    \"max\": 3.93,\n                    \"df\": 8.0,\n
+        \                   \"lb\": 3.364,\n                    \"ub\": 3.491,\n                    \"nstudies\":
+        2,\n                    \"sc\": \"Analytical or derived from analytical\",\n
+        \                   \"refndb\": \"\",\n                    \"lm\": \"2014-08-01T04:00:00+0000\"\n
+        \               },\n                {\n                    \"nutrient_id\":
+        \"312\",\n                    \"name\": \"Copper, Cu\",\n                    \"group\":
+        \"Minerals\",\n                    \"unit\": \"mg\",\n                    \"value\":
+        \"0.056\",\n                    \"sourcecode\": [\n                        1,\n
+        \                       2\n                    ],\n                    \"dp\":
+        24,\n                    \"se\": \"0.004\",\n                    \"min\":
+        0.025,\n                    \"max\": 0.107,\n                    \"df\": 5.0,\n
+        \                   \"lb\": 0.045,\n                    \"ub\": 0.067,\n                    \"nstudies\":
+        2,\n                    \"sc\": \"Analytical or derived from analytical\",\n
+        \                   \"refndb\": \"\",\n                    \"lm\": \"2014-08-01T04:00:00+0000\"\n
+        \               },\n                {\n                    \"nutrient_id\":
+        \"315\",\n                    \"name\": \"Manganese, Mn\",\n                    \"group\":
+        \"Minerals\",\n                    \"unit\": \"mg\",\n                    \"value\":
+        \"0.033\",\n                    \"sourcecode\": [\n                        1,\n
+        \                       2\n                    ],\n                    \"dp\":
+        24,\n                    \"se\": \"0.006\",\n                    \"min\":
+        0.018,\n                    \"max\": 0.105,\n                    \"df\": 5.0,\n
+        \                   \"lb\": 0.017,\n                    \"ub\": 0.05,\n                    \"nstudies\":
+        2,\n                    \"sc\": \"Analytical or derived from analytical\",\n
+        \                   \"refndb\": \"\",\n                    \"lm\": \"2014-08-01T04:00:00+0000\"\n
+        \               },\n                {\n                    \"nutrient_id\":
+        \"317\",\n                    \"name\": \"Selenium, Se\",\n                    \"group\":
+        \"Minerals\",\n                    \"unit\": \"\\u00B5g\",\n                    \"value\":
+        \"28.3\",\n                    \"sourcecode\": [\n                        1\n
+        \                   ],\n                    \"dp\": 9,\n                    \"se\":
+        \"0.586\",\n                    \"min\": 22.7,\n                    \"max\":
+        33.1,\n                    \"df\": 4.0,\n                    \"lb\": 26.669,\n
+        \                   \"ub\": 29.94,\n                    \"nstudies\": 1,\n
+        \                   \"sc\": \"Analytical or derived from analytical\",\n                    \"refndb\":
+        \"\",\n                    \"lm\": \"2014-08-01T04:00:00+0000\"\n                },\n
+        \               {\n                    \"nutrient_id\": \"313\",\n                    \"name\":
+        \"Fluoride, F\",\n                    \"group\": \"Minerals\",\n                    \"unit\":
+        \"\\u00B5g\",\n                    \"value\": \"34.9\",\n                    \"sourcecode\":
+        [\n                        2\n                    ],\n                    \"dp\":
+        1,\n                    \"se\": \"\",\n                    \"min\": null,\n
+        \                   \"max\": null,\n                    \"df\": 0.0,\n                    \"lb\":
+        0.0,\n                    \"ub\": 0.0,\n                    \"nstudies\":
+        0,\n                    \"sc\": \"Analytical or derived from analytical\",\n
+        \                   \"refndb\": \"\",\n                    \"lm\": \"2006-03-01T05:00:00+0000\"\n
+        \               },\n                {\n                    \"nutrient_id\":
+        \"401\",\n                    \"name\": \"Vitamin C, total ascorbic acid\",\n
+        \                   \"group\": \"Vitamins\",\n                    \"unit\":
+        \"mg\",\n                    \"value\": \"0.0\",\n                    \"sourcecode\":
+        \"\",\n                    \"dp\": \"\",\n                    \"se\": \"\",\n
+        \                   \"min\": null,\n                    \"max\": null,\n                    \"df\":
+        0.0,\n                    \"lb\": 0.0,\n                    \"ub\": 0.0,\n
+        \                   \"nstudies\": 0,\n                    \"sc\": \"Analytical
+        or derived from analytical\",\n                    \"refndb\": \"\",\n                    \"lm\":
+        \"1976-11-01T05:00:00+0000\"\n                },\n                {\n                    \"nutrient_id\":
+        \"404\",\n                    \"name\": \"Thiamin\",\n                    \"group\":
+        \"Vitamins\",\n                    \"unit\": \"mg\",\n                    \"value\":
+        \"0.027\",\n                    \"sourcecode\": [\n                        1\n
+        \                   ],\n                    \"dp\": 9,\n                    \"se\":
+        \"0.003\",\n                    \"min\": 0.02,\n                    \"max\":
+        0.03,\n                    \"df\": 1.0,\n                    \"lb\": -0.015,\n
+        \                   \"ub\": 0.068,\n                    \"nstudies\": 1,\n
+        \                   \"sc\": \"Analytical or derived from analytical\",\n                    \"refndb\":
+        \"\",\n                    \"lm\": \"1976-11-01T05:00:00+0000\"\n                },\n
+        \               {\n                    \"nutrient_id\": \"405\",\n                    \"name\":
+        \"Riboflavin\",\n                    \"group\": \"Vitamins\",\n                    \"unit\":
+        \"mg\",\n                    \"value\": \"0.434\",\n                    \"sourcecode\":
+        [\n                        1\n                    ],\n                    \"dp\":
+        9,\n                    \"se\": \"0.022\",\n                    \"min\": 0.33,\n
+        \                   \"max\": 0.55,\n                    \"df\": 2.0,\n                    \"lb\":
+        0.303,\n                    \"ub\": 0.565,\n                    \"nstudies\":
+        1,\n                    \"sc\": \"Analytical or derived from analytical\",\n
+        \                   \"refndb\": \"\",\n                    \"lm\": \"2014-08-01T04:00:00+0000\"\n
+        \               },\n                {\n                    \"nutrient_id\":
+        \"406\",\n                    \"name\": \"Niacin\",\n                    \"group\":
+        \"Vitamins\",\n                    \"unit\": \"mg\",\n                    \"value\":
+        \"0.039\",\n                    \"sourcecode\": [\n                        1\n
+        \                   ],\n                    \"dp\": 9,\n                    \"se\":
+        \"0.004\",\n                    \"min\": 0.03,\n                    \"max\":
+        0.08,\n                    \"df\": 3.0,\n                    \"lb\": 0.024,\n
+        \                   \"ub\": 0.054,\n                    \"nstudies\": 1,\n
+        \                   \"sc\": \"Analytical or derived from analytical\",\n                    \"refndb\":
+        \"\",\n                    \"lm\": \"2014-08-01T04:00:00+0000\"\n                },\n
+        \               {\n                    \"nutrient_id\": \"410\",\n                    \"name\":
+        \"Pantothenic acid\",\n                    \"group\": \"Vitamins\",\n                    \"unit\":
+        \"mg\",\n                    \"value\": \"0.481\",\n                    \"sourcecode\":
+        [\n                        1\n                    ],\n                    \"dp\":
+        6,\n                    \"se\": \"0.004\",\n                    \"min\": 0.46,\n
+        \                   \"max\": 0.52,\n                    \"df\": 2.0,\n                    \"lb\":
+        0.464,\n                    \"ub\": 0.498,\n                    \"nstudies\":
+        1,\n                    \"sc\": \"Analytical or derived from analytical\",\n
+        \                   \"refndb\": \"\",\n                    \"lm\": \"2014-08-01T04:00:00+0000\"\n
+        \               },\n                {\n                    \"nutrient_id\":
+        \"415\",\n                    \"name\": \"Vitamin B-6\",\n                    \"group\":
+        \"Vitamins\",\n                    \"unit\": \"mg\",\n                    \"value\":
+        \"0.049\",\n                    \"sourcecode\": [\n                        1,\n
+        \                       2\n                    ],\n                    \"dp\":
+        12,\n                    \"se\": \"0.002\",\n                    \"min\":
+        0.021,\n                    \"max\": 0.087,\n                    \"df\": 2.0,\n
+        \                   \"lb\": 0.043,\n                    \"ub\": 0.056,\n                    \"nstudies\":
+        2,\n                    \"sc\": \"Analytical or derived from analytical\",\n
+        \                   \"refndb\": \"\",\n                    \"lm\": \"2014-08-01T04:00:00+0000\"\n
+        \               },\n                {\n                    \"nutrient_id\":
+        \"417\",\n                    \"name\": \"Folate, total\",\n                    \"group\":
+        \"Vitamins\",\n                    \"unit\": \"\\u00B5g\",\n                    \"value\":
+        \"26\",\n                    \"sourcecode\": [\n                        1,\n
+        \                       2\n                    ],\n                    \"dp\":
+        7,\n                    \"se\": \"1.136\",\n                    \"min\": 14.0,\n
+        \                   \"max\": 30.0,\n                    \"df\": 2.0,\n                    \"lb\":
+        21.292,\n                    \"ub\": 31.067,\n                    \"nstudies\":
+        2,\n                    \"sc\": \"Analytical or derived from analytical\",\n
+        \                   \"refndb\": \"\",\n                    \"lm\": \"2014-08-01T04:00:00+0000\"\n
+        \               },\n                {\n                    \"nutrient_id\":
+        \"431\",\n                    \"name\": \"Folic acid\",\n                    \"group\":
+        \"Vitamins\",\n                    \"unit\": \"\\u00B5g\",\n                    \"value\":
+        \"0\",\n                    \"sourcecode\": \"\",\n                    \"dp\":
+        \"\",\n                    \"se\": \"\",\n                    \"min\": null,\n
+        \                   \"max\": null,\n                    \"df\": 0.0,\n                    \"lb\":
+        0.0,\n                    \"ub\": 0.0,\n                    \"nstudies\":
+        0,\n                    \"sc\": \"Assumed zero\",\n                    \"refndb\":
+        \"\",\n                    \"lm\": \"2001-01-01T05:00:00+0000\"\n                },\n
+        \               {\n                    \"nutrient_id\": \"432\",\n                    \"name\":
+        \"Folate, food\",\n                    \"group\": \"Vitamins\",\n                    \"unit\":
+        \"\\u00B5g\",\n                    \"value\": \"26\",\n                    \"sourcecode\":
+        \"\",\n                    \"dp\": 7,\n                    \"se\": \"1.136\",\n
+        \                   \"min\": 14.0,\n                    \"max\": 30.0,\n                    \"df\":
+        2.0,\n                    \"lb\": 21.292,\n                    \"ub\": 31.067,\n
+        \                   \"nstudies\": 2,\n                    \"sc\": \"Analytical
+        or derived from analytical\",\n                    \"refndb\": \"\",\n                    \"lm\":
+        \"2014-08-01T04:00:00+0000\"\n                },\n                {\n                    \"nutrient_id\":
+        \"435\",\n                    \"name\": \"Folate, DFE\",\n                    \"group\":
+        \"Vitamins\",\n                    \"unit\": \"\\u00B5g\",\n                    \"value\":
+        \"26\",\n                    \"sourcecode\": \"\",\n                    \"dp\":
+        \"\",\n                    \"se\": \"\",\n                    \"min\": null,\n
+        \                   \"max\": null,\n                    \"df\": 0.0,\n                    \"lb\":
+        0.0,\n                    \"ub\": 0.0,\n                    \"nstudies\":
+        0,\n                    \"sc\": \"Calculated or imputed\",\n                    \"refndb\":
+        \"\",\n                    \"lm\": \"2014-08-01T04:00:00+0000\"\n                },\n
+        \               {\n                    \"nutrient_id\": \"421\",\n                    \"name\":
+        \"Choline, total\",\n                    \"group\": \"Vitamins\",\n                    \"unit\":
+        \"mg\",\n                    \"value\": \"16.5\",\n                    \"sourcecode\":
+        [\n                        2\n                    ],\n                    \"dp\":
+        \"\",\n                    \"se\": \"\",\n                    \"min\": null,\n
+        \                   \"max\": null,\n                    \"df\": 0.0,\n                    \"lb\":
+        0.0,\n                    \"ub\": 0.0,\n                    \"nstudies\":
+        0,\n                    \"sc\": \"Analytical or derived from analytical\",\n
+        \                   \"refndb\": \"\",\n                    \"lm\": \"2006-12-01T05:00:00+0000\"\n
+        \               },\n                {\n                    \"nutrient_id\":
+        \"454\",\n                    \"name\": \"Betaine\",\n                    \"group\":
+        \"Vitamins\",\n                    \"unit\": \"mg\",\n                    \"value\":
+        \"0.7\",\n                    \"sourcecode\": [\n                        2\n
+        \                   ],\n                    \"dp\": 1,\n                    \"se\":
+        \"\",\n                    \"min\": null,\n                    \"max\": null,\n
+        \                   \"df\": 0.0,\n                    \"lb\": 0.0,\n                    \"ub\":
+        0.0,\n                    \"nstudies\": 0,\n                    \"sc\": \"Analytical
+        or derived from analytical\",\n                    \"refndb\": \"\",\n                    \"lm\":
+        \"2006-12-01T05:00:00+0000\"\n                },\n                {\n                    \"nutrient_id\":
+        \"418\",\n                    \"name\": \"Vitamin B-12\",\n                    \"group\":
+        \"Vitamins\",\n                    \"unit\": \"\\u00B5g\",\n                    \"value\":
+        \"0.88\",\n                    \"sourcecode\": [\n                        1\n
+        \                   ],\n                    \"dp\": 9,\n                    \"se\":
+        \"0.039\",\n                    \"min\": 0.78,\n                    \"max\":
+        1.2,\n                    \"df\": 2.0,\n                    \"lb\": 0.713,\n
+        \                   \"ub\": 1.056,\n                    \"nstudies\": 1,\n
+        \                   \"sc\": \"Analytical or derived from analytical\",\n                    \"refndb\":
+        \"\",\n                    \"lm\": \"2014-08-01T04:00:00+0000\"\n                },\n
+        \               {\n                    \"nutrient_id\": \"578\",\n                    \"name\":
+        \"Vitamin B-12, added\",\n                    \"group\": \"Vitamins\",\n                    \"unit\":
+        \"\\u00B5g\",\n                    \"value\": \"0.00\",\n                    \"sourcecode\":
+        \"\",\n                    \"dp\": \"\",\n                    \"se\": \"\",\n
+        \                   \"min\": null,\n                    \"max\": null,\n                    \"df\":
+        0.0,\n                    \"lb\": 0.0,\n                    \"ub\": 0.0,\n
+        \                   \"nstudies\": 0,\n                    \"sc\": \"Assumed
+        zero\",\n                    \"refndb\": \"\",\n                    \"lm\":
+        \"2004-09-01T04:00:00+0000\"\n                },\n                {\n                    \"nutrient_id\":
+        \"320\",\n                    \"name\": \"Vitamin A, RAE\",\n                    \"group\":
+        \"Vitamins\",\n                    \"unit\": \"\\u00B5g\",\n                    \"value\":
+        \"263\",\n                    \"sourcecode\": \"\",\n                    \"dp\":
+        \"\",\n                    \"se\": \"\",\n                    \"min\": null,\n
+        \                   \"max\": null,\n                    \"df\": 0.0,\n                    \"lb\":
+        0.0,\n                    \"ub\": 0.0,\n                    \"nstudies\":
+        0,\n                    \"sc\": \"Analytical or derived from analytical\",\n
+        \                   \"refndb\": \"\",\n                    \"lm\": \"2014-08-01T04:00:00+0000\"\n
+        \               },\n                {\n                    \"nutrient_id\":
+        \"319\",\n                    \"name\": \"Retinol\",\n                    \"group\":
+        \"Vitamins\",\n                    \"unit\": \"\\u00B5g\",\n                    \"value\":
+        \"256\",\n                    \"sourcecode\": [\n                        1\n
+        \                   ],\n                    \"dp\": 3,\n                    \"se\":
+        \"\",\n                    \"min\": 249.0,\n                    \"max\": 356.0,\n
+        \                   \"df\": 0.0,\n                    \"lb\": 0.0,\n                    \"ub\":
+        0.0,\n                    \"nstudies\": 1,\n                    \"sc\": \"Analytical
+        or derived from analytical\",\n                    \"refndb\": \"\",\n                    \"lm\":
+        \"2014-08-01T04:00:00+0000\"\n                },\n                {\n                    \"nutrient_id\":
+        \"321\",\n                    \"name\": \"Carotene, beta\",\n                    \"group\":
+        \"Vitamins\",\n                    \"unit\": \"\\u00B5g\",\n                    \"value\":
+        \"85\",\n                    \"sourcecode\": [\n                        3\n
+        \                   ],\n                    \"dp\": 2,\n                    \"se\":
+        \"\",\n                    \"min\": null,\n                    \"max\": null,\n
+        \                   \"df\": 0.0,\n                    \"lb\": 0.0,\n                    \"ub\":
+        0.0,\n                    \"nstudies\": 0,\n                    \"sc\": \"Analytical
+        or derived from analytical\",\n                    \"refndb\": \"\",\n                    \"lm\":
+        \"2002-11-01T05:00:00+0000\"\n                },\n                {\n                    \"nutrient_id\":
+        \"322\",\n                    \"name\": \"Carotene, alpha\",\n                    \"group\":
+        \"Vitamins\",\n                    \"unit\": \"\\u00B5g\",\n                    \"value\":
+        \"0\",\n                    \"sourcecode\": [\n                        3\n
+        \                   ],\n                    \"dp\": 2,\n                    \"se\":
+        \"\",\n                    \"min\": null,\n                    \"max\": null,\n
+        \                   \"df\": 0.0,\n                    \"lb\": 0.0,\n                    \"ub\":
+        0.0,\n                    \"nstudies\": 0,\n                    \"sc\": \"Analytical
+        or derived from analytical\",\n                    \"refndb\": \"\",\n                    \"lm\":
+        \"2002-11-01T05:00:00+0000\"\n                },\n                {\n                    \"nutrient_id\":
+        \"334\",\n                    \"name\": \"Cryptoxanthin, beta\",\n                    \"group\":
+        \"Vitamins\",\n                    \"unit\": \"\\u00B5g\",\n                    \"value\":
+        \"0\",\n                    \"sourcecode\": [\n                        3\n
+        \                   ],\n                    \"dp\": 2,\n                    \"se\":
+        \"\",\n                    \"min\": null,\n                    \"max\": null,\n
+        \                   \"df\": 0.0,\n                    \"lb\": 0.0,\n                    \"ub\":
+        0.0,\n                    \"nstudies\": 0,\n                    \"sc\": \"Analytical
+        or derived from analytical\",\n                    \"refndb\": \"\",\n                    \"lm\":
+        \"2002-11-01T05:00:00+0000\"\n                },\n                {\n                    \"nutrient_id\":
+        \"318\",\n                    \"name\": \"Vitamin A, IU\",\n                    \"group\":
+        \"Vitamins\",\n                    \"unit\": \"IU\",\n                    \"value\":
+        \"994\",\n                    \"sourcecode\": \"\",\n                    \"dp\":
+        \"\",\n                    \"se\": \"\",\n                    \"min\": null,\n
+        \                   \"max\": null,\n                    \"df\": 0.0,\n                    \"lb\":
+        0.0,\n                    \"ub\": 0.0,\n                    \"nstudies\":
+        0,\n                    \"sc\": \"Analytical or derived from analytical\",\n
+        \                   \"refndb\": \"\",\n                    \"lm\": \"2014-08-01T04:00:00+0000\"\n
+        \               },\n                {\n                    \"nutrient_id\":
+        \"337\",\n                    \"name\": \"Lycopene\",\n                    \"group\":
+        \"Vitamins\",\n                    \"unit\": \"\\u00B5g\",\n                    \"value\":
+        \"0\",\n                    \"sourcecode\": [\n                        3\n
+        \                   ],\n                    \"dp\": 2,\n                    \"se\":
+        \"\",\n                    \"min\": null,\n                    \"max\": null,\n
+        \                   \"df\": 0.0,\n                    \"lb\": 0.0,\n                    \"ub\":
+        0.0,\n                    \"nstudies\": 0,\n                    \"sc\": \"Analytical
+        or derived from analytical\",\n                    \"refndb\": \"\",\n                    \"lm\":
+        \"2002-11-01T05:00:00+0000\"\n                },\n                {\n                    \"nutrient_id\":
+        \"338\",\n                    \"name\": \"Lutein + zeaxanthin\",\n                    \"group\":
+        \"Vitamins\",\n                    \"unit\": \"\\u00B5g\",\n                    \"value\":
+        \"0\",\n                    \"sourcecode\": [\n                        3\n
+        \                   ],\n                    \"dp\": 2,\n                    \"se\":
+        \"\",\n                    \"min\": null,\n                    \"max\": null,\n
+        \                   \"df\": 0.0,\n                    \"lb\": 0.0,\n                    \"ub\":
+        0.0,\n                    \"nstudies\": 0,\n                    \"sc\": \"Analytical
+        or derived from analytical\",\n                    \"refndb\": \"\",\n                    \"lm\":
+        \"2002-11-01T05:00:00+0000\"\n                },\n                {\n                    \"nutrient_id\":
+        \"323\",\n                    \"name\": \"Vitamin E (alpha-tocopherol)\",\n
+        \                   \"group\": \"Vitamins\",\n                    \"unit\":
+        \"mg\",\n                    \"value\": \"0.78\",\n                    \"sourcecode\":
+        [\n                        1\n                    ],\n                    \"dp\":
+        9,\n                    \"se\": \"0.013\",\n                    \"min\": 0.7,\n
+        \                   \"max\": 0.94,\n                    \"df\": 4.0,\n                    \"lb\":
+        0.744,\n                    \"ub\": 0.817,\n                    \"nstudies\":
+        1,\n                    \"sc\": \"Analytical or derived from analytical\",\n
+        \                   \"refndb\": \"\",\n                    \"lm\": \"2014-08-01T04:00:00+0000\"\n
+        \               },\n                {\n                    \"nutrient_id\":
+        \"573\",\n                    \"name\": \"Vitamin E, added\",\n                    \"group\":
+        \"Vitamins\",\n                    \"unit\": \"mg\",\n                    \"value\":
+        \"0.00\",\n                    \"sourcecode\": \"\",\n                    \"dp\":
+        \"\",\n                    \"se\": \"\",\n                    \"min\": null,\n
+        \                   \"max\": null,\n                    \"df\": 0.0,\n                    \"lb\":
+        0.0,\n                    \"ub\": 0.0,\n                    \"nstudies\":
+        0,\n                    \"sc\": \"Assumed zero\",\n                    \"refndb\":
+        \"\",\n                    \"lm\": \"2004-09-01T04:00:00+0000\"\n                },\n
+        \               {\n                    \"nutrient_id\": \"341\",\n                    \"name\":
+        \"Tocopherol, beta\",\n                    \"group\": \"Vitamins\",\n                    \"unit\":
+        \"mg\",\n                    \"value\": \"0.00\",\n                    \"sourcecode\":
+        [\n                        1\n                    ],\n                    \"dp\":
+        9,\n                    \"se\": \"0.000\",\n                    \"min\": 0.0,\n
+        \                   \"max\": 0.0,\n                    \"df\": 0.0,\n                    \"lb\":
+        0.0,\n                    \"ub\": 0.0,\n                    \"nstudies\":
+        1,\n                    \"sc\": \"Analytical or derived from analytical\",\n
+        \                   \"refndb\": \"\",\n                    \"lm\": \"2014-05-01T04:00:00+0000\"\n
+        \               },\n                {\n                    \"nutrient_id\":
+        \"342\",\n                    \"name\": \"Tocopherol, gamma\",\n                    \"group\":
+        \"Vitamins\",\n                    \"unit\": \"mg\",\n                    \"value\":
+        \"0.06\",\n                    \"sourcecode\": [\n                        1\n
+        \                   ],\n                    \"dp\": 9,\n                    \"se\":
+        \"0.005\",\n                    \"min\": 0.0,\n                    \"max\":
+        0.08,\n                    \"df\": 4.0,\n                    \"lb\": 0.041,\n
+        \                   \"ub\": 0.073,\n                    \"nstudies\": 1,\n
+        \                   \"sc\": \"Analytical or derived from analytical\",\n                    \"refndb\":
+        \"\",\n                    \"lm\": \"2014-08-01T04:00:00+0000\"\n                },\n
+        \               {\n                    \"nutrient_id\": \"343\",\n                    \"name\":
+        \"Tocopherol, delta\",\n                    \"group\": \"Vitamins\",\n                    \"unit\":
+        \"mg\",\n                    \"value\": \"0.00\",\n                    \"sourcecode\":
+        [\n                        1\n                    ],\n                    \"dp\":
+        9,\n                    \"se\": \"0.000\",\n                    \"min\": 0.0,\n
+        \                   \"max\": 0.0,\n                    \"df\": 0.0,\n                    \"lb\":
+        0.0,\n                    \"ub\": 0.0,\n                    \"nstudies\":
+        1,\n                    \"sc\": \"Analytical or derived from analytical\",\n
+        \                   \"refndb\": \"\",\n                    \"lm\": \"2009-01-01T05:00:00+0000\"\n
+        \               },\n                {\n                    \"nutrient_id\":
+        \"328\",\n                    \"name\": \"Vitamin D (D2 + D3)\",\n                    \"group\":
+        \"Vitamins\",\n                    \"unit\": \"\\u00B5g\",\n                    \"value\":
+        \"0.6\",\n                    \"sourcecode\": \"\",\n                    \"dp\":
+        \"\",\n                    \"se\": \"\",\n                    \"min\": null,\n
+        \                   \"max\": null,\n                    \"df\": 0.0,\n                    \"lb\":
+        0.0,\n                    \"ub\": 0.0,\n                    \"nstudies\":
+        0,\n                    \"sc\": \"Calculated or imputed\",\n                    \"refndb\":
+        \"\",\n                    \"lm\": \"2014-08-01T04:00:00+0000\"\n                },\n
+        \               {\n                    \"nutrient_id\": \"326\",\n                    \"name\":
+        \"Vitamin D3 (cholecalciferol)\",\n                    \"group\": \"Vitamins\",\n
+        \                   \"unit\": \"\\u00B5g\",\n                    \"value\":
+        \"0.6\",\n                    \"sourcecode\": \"\",\n                    \"dp\":
+        \"\",\n                    \"se\": \"\",\n                    \"min\": null,\n
+        \                   \"max\": null,\n                    \"df\": 0.0,\n                    \"lb\":
+        0.0,\n                    \"ub\": 0.0,\n                    \"nstudies\":
+        0,\n                    \"sc\": \"Calculated or imputed\",\n                    \"refndb\":
+        \"01211\",\n                    \"lm\": \"2009-01-01T05:00:00+0000\"\n                },\n
+        \               {\n                    \"nutrient_id\": \"324\",\n                    \"name\":
+        \"Vitamin D\",\n                    \"group\": \"Vitamins\",\n                    \"unit\":
+        \"IU\",\n                    \"value\": \"24\",\n                    \"sourcecode\":
+        \"\",\n                    \"dp\": \"\",\n                    \"se\": \"\",\n
+        \                   \"min\": null,\n                    \"max\": null,\n                    \"df\":
+        0.0,\n                    \"lb\": 0.0,\n                    \"ub\": 0.0,\n
+        \                   \"nstudies\": 0,\n                    \"sc\": \"Calculated
+        or imputed\",\n                    \"refndb\": \"01211\",\n                    \"lm\":
+        \"2009-01-01T05:00:00+0000\"\n                },\n                {\n                    \"nutrient_id\":
+        \"430\",\n                    \"name\": \"Vitamin K (phylloquinone)\",\n                    \"group\":
+        \"Vitamins\",\n                    \"unit\": \"\\u00B5g\",\n                    \"value\":
+        \"2.9\",\n                    \"sourcecode\": [\n                        1,\n
+        \                       2\n                    ],\n                    \"dp\":
+        4,\n                    \"se\": \"0.078\",\n                    \"min\": 2.3,\n
+        \                   \"max\": 3.2,\n                    \"df\": 1.0,\n                    \"lb\":
+        1.953,\n                    \"ub\": 3.941,\n                    \"nstudies\":
+        2,\n                    \"sc\": \"Analytical or derived from analytical\",\n
+        \                   \"refndb\": \"\",\n                    \"lm\": \"2014-08-01T04:00:00+0000\"\n
+        \               },\n                {\n                    \"nutrient_id\":
+        \"606\",\n                    \"name\": \"Fatty acids, total saturated\",\n
+        \                   \"group\": \"Lipids\",\n                    \"unit\":
+        \"g\",\n                    \"value\": \"19.368\",\n                    \"sourcecode\":
+        \"\",\n                    \"dp\": \"\",\n                    \"se\": \"\",\n
+        \                   \"min\": null,\n                    \"max\": null,\n                    \"df\":
+        0.0,\n                    \"lb\": 0.0,\n                    \"ub\": 0.0,\n
+        \                   \"nstudies\": 0,\n                    \"sc\": \"Calculated
+        or imputed\",\n                    \"refndb\": \"\",\n                    \"lm\":
+        \"2014-08-01T04:00:00+0000\"\n                },\n                {\n                    \"nutrient_id\":
+        \"607\",\n                    \"name\": \"4:0\",\n                    \"group\":
+        \"Lipids\",\n                    \"unit\": \"g\",\n                    \"value\":
+        \"0.675\",\n                    \"sourcecode\": [\n                        1\n
+        \                   ],\n                    \"dp\": 18,\n                    \"se\":
+        \"0.009\",\n                    \"min\": 0.644,\n                    \"max\":
+        0.717,\n                    \"df\": 3.0,\n                    \"lb\": 0.649,\n
+        \                   \"ub\": 0.702,\n                    \"nstudies\": 1,\n
+        \                   \"sc\": \"Analytical or derived from analytical\",\n                    \"refndb\":
+        \"\",\n                    \"lm\": \"2014-08-01T04:00:00+0000\"\n                },\n
+        \               {\n                    \"nutrient_id\": \"608\",\n                    \"name\":
+        \"6:0\",\n                    \"group\": \"Lipids\",\n                    \"unit\":
+        \"g\",\n                    \"value\": \"0.565\",\n                    \"sourcecode\":
+        [\n                        1\n                    ],\n                    \"dp\":
+        18,\n                    \"se\": \"0.013\",\n                    \"min\":
+        0.0,\n                    \"max\": 0.636,\n                    \"df\": 6.0,\n
+        \                   \"lb\": 0.533,\n                    \"ub\": 0.598,\n                    \"nstudies\":
+        1,\n                    \"sc\": \"Analytical or derived from analytical\",\n
+        \                   \"refndb\": \"\",\n                    \"lm\": \"2014-08-01T04:00:00+0000\"\n
+        \               },\n                {\n                    \"nutrient_id\":
+        \"609\",\n                    \"name\": \"8:0\",\n                    \"group\":
+        \"Lipids\",\n                    \"unit\": \"g\",\n                    \"value\":
+        \"0.361\",\n                    \"sourcecode\": [\n                        1\n
+        \                   ],\n                    \"dp\": 18,\n                    \"se\":
+        \"0.006\",\n                    \"min\": 0.325,\n                    \"max\":
+        0.403,\n                    \"df\": 4.0,\n                    \"lb\": 0.342,\n
+        \                   \"ub\": 0.379,\n                    \"nstudies\": 1,\n
+        \                   \"sc\": \"Analytical or derived from analytical\",\n                    \"refndb\":
+        \"\",\n                    \"lm\": \"2014-08-01T04:00:00+0000\"\n                },\n
+        \               {\n                    \"nutrient_id\": \"610\",\n                    \"name\":
+        \"10:0\",\n                    \"group\": \"Lipids\",\n                    \"unit\":
+        \"g\",\n                    \"value\": \"0.857\",\n                    \"sourcecode\":
+        [\n                        1\n                    ],\n                    \"dp\":
+        18,\n                    \"se\": \"0.015\",\n                    \"min\":
+        0.764,\n                    \"max\": 0.966,\n                    \"df\": 4.0,\n
+        \                   \"lb\": 0.814,\n                    \"ub\": 0.899,\n                    \"nstudies\":
+        1,\n                    \"sc\": \"Analytical or derived from analytical\",\n
+        \                   \"refndb\": \"\",\n                    \"lm\": \"2014-08-01T04:00:00+0000\"\n
+        \               },\n                {\n                    \"nutrient_id\":
+        \"611\",\n                    \"name\": \"12:0\",\n                    \"group\":
+        \"Lipids\",\n                    \"unit\": \"g\",\n                    \"value\":
+        \"0.967\",\n                    \"sourcecode\": [\n                        1\n
+        \                   ],\n                    \"dp\": 18,\n                    \"se\":
+        \"0.013\",\n                    \"min\": 0.891,\n                    \"max\":
+        1.094,\n                    \"df\": 5.0,\n                    \"lb\": 0.933,\n
+        \                   \"ub\": 1.0,\n                    \"nstudies\": 1,\n                    \"sc\":
+        \"Analytical or derived from analytical\",\n                    \"refndb\":
+        \"\",\n                    \"lm\": \"2014-08-01T04:00:00+0000\"\n                },\n
+        \               {\n                    \"nutrient_id\": \"612\",\n                    \"name\":
+        \"14:0\",\n                    \"group\": \"Lipids\",\n                    \"unit\":
+        \"g\",\n                    \"value\": \"3.103\",\n                    \"sourcecode\":
+        [\n                        1\n                    ],\n                    \"dp\":
+        18,\n                    \"se\": \"0.035\",\n                    \"min\":
+        2.918,\n                    \"max\": 3.382,\n                    \"df\": 4.0,\n
+        \                   \"lb\": 3.007,\n                    \"ub\": 3.199,\n                    \"nstudies\":
+        1,\n                    \"sc\": \"Analytical or derived from analytical\",\n
+        \                   \"refndb\": \"\",\n                    \"lm\": \"2014-08-01T04:00:00+0000\"\n
+        \               },\n                {\n                    \"nutrient_id\":
+        \"652\",\n                    \"name\": \"15:0\",\n                    \"group\":
+        \"Lipids\",\n                    \"unit\": \"g\",\n                    \"value\":
+        \"0.322\",\n                    \"sourcecode\": [\n                        1\n
+        \                   ],\n                    \"dp\": 18,\n                    \"se\":
+        \"0.004\",\n                    \"min\": 0.301,\n                    \"max\":
+        0.39,\n                    \"df\": 4.0,\n                    \"lb\": 0.31,\n
+        \                   \"ub\": 0.334,\n                    \"nstudies\": 1,\n
+        \                   \"sc\": \"Analytical or derived from analytical\",\n                    \"refndb\":
+        \"\",\n                    \"lm\": \"2014-08-01T04:00:00+0000\"\n                },\n
+        \               {\n                    \"nutrient_id\": \"613\",\n                    \"name\":
+        \"16:0\",\n                    \"group\": \"Lipids\",\n                    \"unit\":
+        \"g\",\n                    \"value\": \"8.705\",\n                    \"sourcecode\":
+        [\n                        1\n                    ],\n                    \"dp\":
+        18,\n                    \"se\": \"0.091\",\n                    \"min\":
+        8.014,\n                    \"max\": 9.402,\n                    \"df\": 5.0,\n
+        \                   \"lb\": 8.474,\n                    \"ub\": 8.935,\n                    \"nstudies\":
+        1,\n                    \"sc\": \"Analytical or derived from analytical\",\n
+        \                   \"refndb\": \"\",\n                    \"lm\": \"2014-08-01T04:00:00+0000\"\n
+        \               },\n                {\n                    \"nutrient_id\":
+        \"653\",\n                    \"name\": \"17:0\",\n                    \"group\":
+        \"Lipids\",\n                    \"unit\": \"g\",\n                    \"value\":
+        \"0.195\",\n                    \"sourcecode\": [\n                        1\n
+        \                   ],\n                    \"dp\": 18,\n                    \"se\":
+        \"0.004\",\n                    \"min\": 0.182,\n                    \"max\":
+        0.231,\n                    \"df\": 4.0,\n                    \"lb\": 0.184,\n
+        \                   \"ub\": 0.207,\n                    \"nstudies\": 1,\n
+        \                   \"sc\": \"Analytical or derived from analytical\",\n                    \"refndb\":
+        \"\",\n                    \"lm\": \"2014-08-01T04:00:00+0000\"\n                },\n
+        \               {\n                    \"nutrient_id\": \"614\",\n                    \"name\":
+        \"18:0\",\n                    \"group\": \"Lipids\",\n                    \"unit\":
+        \"g\",\n                    \"value\": \"3.547\",\n                    \"sourcecode\":
+        [\n                        1\n                    ],\n                    \"dp\":
+        18,\n                    \"se\": \"0.116\",\n                    \"min\":
+        2.953,\n                    \"max\": 4.021,\n                    \"df\": 3.0,\n
+        \                   \"lb\": 3.204,\n                    \"ub\": 3.889,\n                    \"nstudies\":
+        1,\n                    \"sc\": \"Analytical or derived from analytical\",\n
+        \                   \"refndb\": \"\",\n                    \"lm\": \"2014-08-01T04:00:00+0000\"\n
+        \               },\n                {\n                    \"nutrient_id\":
+        \"615\",\n                    \"name\": \"20:0\",\n                    \"group\":
+        \"Lipids\",\n                    \"unit\": \"g\",\n                    \"value\":
+        \"0.049\",\n                    \"sourcecode\": [\n                        1\n
+        \                   ],\n                    \"dp\": 18,\n                    \"se\":
+        \"0.001\",\n                    \"min\": 0.044,\n                    \"max\":
+        0.059,\n                    \"df\": 4.0,\n                    \"lb\": 0.047,\n
+        \                   \"ub\": 0.051,\n                    \"nstudies\": 1,\n
+        \                   \"sc\": \"Analytical or derived from analytical\",\n                    \"refndb\":
+        \"\",\n                    \"lm\": \"2014-08-01T04:00:00+0000\"\n                },\n
+        \               {\n                    \"nutrient_id\": \"624\",\n                    \"name\":
+        \"22:0\",\n                    \"group\": \"Lipids\",\n                    \"unit\":
+        \"g\",\n                    \"value\": \"0.014\",\n                    \"sourcecode\":
+        [\n                        1\n                    ],\n                    \"dp\":
+        18,\n                    \"se\": \"0.001\",\n                    \"min\":
+        0.011,\n                    \"max\": 0.018,\n                    \"df\": 3.0,\n
+        \                   \"lb\": 0.01,\n                    \"ub\": 0.017,\n                    \"nstudies\":
+        1,\n                    \"sc\": \"Analytical or derived from analytical\",\n
+        \                   \"refndb\": \"\",\n                    \"lm\": \"2014-08-01T04:00:00+0000\"\n
+        \               },\n                {\n                    \"nutrient_id\":
+        \"654\",\n                    \"name\": \"24:0\",\n                    \"group\":
+        \"Lipids\",\n                    \"unit\": \"g\",\n                    \"value\":
+        \"0.009\",\n                    \"sourcecode\": [\n                        1\n
+        \                   ],\n                    \"dp\": 18,\n                    \"se\":
+        \"0.000\",\n                    \"min\": 0.007,\n                    \"max\":
+        0.011,\n                    \"df\": 5.0,\n                    \"lb\": 0.008,\n
+        \                   \"ub\": 0.009,\n                    \"nstudies\": 1,\n
+        \                   \"sc\": \"Analytical or derived from analytical\",\n                    \"refndb\":
+        \"\",\n                    \"lm\": \"2014-08-01T04:00:00+0000\"\n                },\n
+        \               {\n                    \"nutrient_id\": \"645\",\n                    \"name\":
+        \"Fatty acids, total monounsaturated\",\n                    \"group\": \"Lipids\",\n
+        \                   \"unit\": \"g\",\n                    \"value\": \"8.428\",\n
+        \                   \"sourcecode\": \"\",\n                    \"dp\": \"\",\n
+        \                   \"se\": \"\",\n                    \"min\": null,\n                    \"max\":
+        null,\n                    \"df\": 0.0,\n                    \"lb\": 0.0,\n
+        \                   \"ub\": 0.0,\n                    \"nstudies\": 0,\n                    \"sc\":
+        \"Calculated or imputed\",\n                    \"refndb\": \"\",\n                    \"lm\":
+        \"2014-08-01T04:00:00+0000\"\n                },\n                {\n                    \"nutrient_id\":
+        \"625\",\n                    \"name\": \"14:1\",\n                    \"group\":
+        \"Lipids\",\n                    \"unit\": \"g\",\n                    \"value\":
+        \"0.305\",\n                    \"sourcecode\": [\n                        1\n
+        \                   ],\n                    \"dp\": 18,\n                    \"se\":
+        \"0.009\",\n                    \"min\": 0.273,\n                    \"max\":
+        0.354,\n                    \"df\": 4.0,\n                    \"lb\": 0.28,\n
+        \                   \"ub\": 0.33,\n                    \"nstudies\": 1,\n
+        \                   \"sc\": \"Analytical or derived from analytical\",\n                    \"refndb\":
+        \"\",\n                    \"lm\": \"2014-08-01T04:00:00+0000\"\n                },\n
+        \               {\n                    \"nutrient_id\": \"697\",\n                    \"name\":
+        \"15:1\",\n                    \"group\": \"Lipids\",\n                    \"unit\":
+        \"g\",\n                    \"value\": \"0.000\",\n                    \"sourcecode\":
+        [\n                        1\n                    ],\n                    \"dp\":
+        18,\n                    \"se\": \"0.000\",\n                    \"min\":
+        0.0,\n                    \"max\": 0.0,\n                    \"df\": 0.0,\n
+        \                   \"lb\": 0.0,\n                    \"ub\": 0.0,\n                    \"nstudies\":
+        1,\n                    \"sc\": \"Analytical or derived from analytical\",\n
+        \                   \"refndb\": \"\",\n                    \"lm\": \"2014-05-01T04:00:00+0000\"\n
+        \               },\n                {\n                    \"nutrient_id\":
+        \"626\",\n                    \"name\": \"16:1 undifferentiated\",\n                    \"group\":
+        \"Lipids\",\n                    \"unit\": \"g\",\n                    \"value\":
+        \"0.492\",\n                    \"sourcecode\": [\n                        1\n
+        \                   ],\n                    \"dp\": 18,\n                    \"se\":
+        \"0.017\",\n                    \"min\": 0.413,\n                    \"max\":
+        0.605,\n                    \"df\": 4.0,\n                    \"lb\": 0.445,\n
+        \                   \"ub\": 0.539,\n                    \"nstudies\": 1,\n
+        \                   \"sc\": \"Analytical or derived from analytical\",\n                    \"refndb\":
+        \"\",\n                    \"lm\": \"2014-08-01T04:00:00+0000\"\n                },\n
+        \               {\n                    \"nutrient_id\": \"673\",\n                    \"name\":
+        \"16:1 c\",\n                    \"group\": \"Lipids\",\n                    \"unit\":
+        \"g\",\n                    \"value\": \"0.388\",\n                    \"sourcecode\":
+        [\n                        1\n                    ],\n                    \"dp\":
+        18,\n                    \"se\": \"0.015\",\n                    \"min\":
+        0.316,\n                    \"max\": 0.492,\n                    \"df\": 4.0,\n
+        \                   \"lb\": 0.346,\n                    \"ub\": 0.431,\n                    \"nstudies\":
+        1,\n                    \"sc\": \"Analytical or derived from analytical\",\n
+        \                   \"refndb\": \"\",\n                    \"lm\": \"2014-05-01T04:00:00+0000\"\n
+        \               },\n                {\n                    \"nutrient_id\":
+        \"662\",\n                    \"name\": \"16:1 t\",\n                    \"group\":
+        \"Lipids\",\n                    \"unit\": \"g\",\n                    \"value\":
+        \"0.104\",\n                    \"sourcecode\": [\n                        1\n
+        \                   ],\n                    \"dp\": 18,\n                    \"se\":
+        \"0.002\",\n                    \"min\": 0.093,\n                    \"max\":
+        0.124,\n                    \"df\": 4.0,\n                    \"lb\": 0.098,\n
+        \                   \"ub\": 0.109,\n                    \"nstudies\": 1,\n
+        \                   \"sc\": \"Analytical or derived from analytical\",\n                    \"refndb\":
+        \"\",\n                    \"lm\": \"2014-05-01T04:00:00+0000\"\n                },\n
+        \               {\n                    \"nutrient_id\": \"687\",\n                    \"name\":
+        \"17:1\",\n                    \"group\": \"Lipids\",\n                    \"unit\":
+        \"g\",\n                    \"value\": \"0.059\",\n                    \"sourcecode\":
+        [\n                        1\n                    ],\n                    \"dp\":
+        18,\n                    \"se\": \"0.003\",\n                    \"min\":
+        0.049,\n                    \"max\": 0.076,\n                    \"df\": 4.0,\n
+        \                   \"lb\": 0.051,\n                    \"ub\": 0.067,\n                    \"nstudies\":
+        1,\n                    \"sc\": \"Analytical or derived from analytical\",\n
+        \                   \"refndb\": \"\",\n                    \"lm\": \"2014-08-01T04:00:00+0000\"\n
+        \               },\n                {\n                    \"nutrient_id\":
+        \"617\",\n                    \"name\": \"18:1 undifferentiated\",\n                    \"group\":
+        \"Lipids\",\n                    \"unit\": \"g\",\n                    \"value\":
+        \"7.509\",\n                    \"sourcecode\": [\n                        1\n
+        \                   ],\n                    \"dp\": 18,\n                    \"se\":
+        \"0.098\",\n                    \"min\": 6.928,\n                    \"max\":
+        8.396,\n                    \"df\": 3.0,\n                    \"lb\": 7.215,\n
+        \                   \"ub\": 7.804,\n                    \"nstudies\": 1,\n
+        \                   \"sc\": \"Analytical or derived from analytical\",\n                    \"refndb\":
+        \"\",\n                    \"lm\": \"2014-08-01T04:00:00+0000\"\n                },\n
+        \               {\n                    \"nutrient_id\": \"674\",\n                    \"name\":
+        \"18:1 c\",\n                    \"group\": \"Lipids\",\n                    \"unit\":
+        \"g\",\n                    \"value\": \"6.667\",\n                    \"sourcecode\":
+        [\n                        1\n                    ],\n                    \"dp\":
+        18,\n                    \"se\": \"0.088\",\n                    \"min\":
+        6.145,\n                    \"max\": 7.479,\n                    \"df\": 3.0,\n
+        \                   \"lb\": 6.406,\n                    \"ub\": 6.928,\n                    \"nstudies\":
+        1,\n                    \"sc\": \"Analytical or derived from analytical\",\n
+        \                   \"refndb\": \"\",\n                    \"lm\": \"2014-05-01T04:00:00+0000\"\n
+        \               },\n                {\n                    \"nutrient_id\":
+        \"663\",\n                    \"name\": \"18:1 t\",\n                    \"group\":
+        \"Lipids\",\n                    \"unit\": \"g\",\n                    \"value\":
+        \"0.842\",\n                    \"sourcecode\": [\n                        1\n
+        \                   ],\n                    \"dp\": 18,\n                    \"se\":
+        \"0.013\",\n                    \"min\": 0.727,\n                    \"max\":
+        0.917,\n                    \"df\": 4.0,\n                    \"lb\": 0.806,\n
+        \                   \"ub\": 0.878,\n                    \"nstudies\": 1,\n
+        \                   \"sc\": \"Analytical or derived from analytical\",\n                    \"refndb\":
+        \"\",\n                    \"lm\": \"2014-05-01T04:00:00+0000\"\n                },\n
+        \               {\n                    \"nutrient_id\": \"628\",\n                    \"name\":
+        \"20:1\",\n                    \"group\": \"Lipids\",\n                    \"unit\":
+        \"g\",\n                    \"value\": \"0.061\",\n                    \"sourcecode\":
+        [\n                        1\n                    ],\n                    \"dp\":
+        18,\n                    \"se\": \"0.001\",\n                    \"min\":
+        0.052,\n                    \"max\": 0.072,\n                    \"df\": 4.0,\n
+        \                   \"lb\": 0.056,\n                    \"ub\": 0.065,\n                    \"nstudies\":
+        1,\n                    \"sc\": \"Analytical or derived from analytical\",\n
+        \                   \"refndb\": \"\",\n                    \"lm\": \"2014-08-01T04:00:00+0000\"\n
+        \               },\n                {\n                    \"nutrient_id\":
+        \"630\",\n                    \"name\": \"22:1 undifferentiated\",\n                    \"group\":
+        \"Lipids\",\n                    \"unit\": \"g\",\n                    \"value\":
+        \"0.001\",\n                    \"sourcecode\": [\n                        1\n
+        \                   ],\n                    \"dp\": 18,\n                    \"se\":
+        \"0.000\",\n                    \"min\": 0.0,\n                    \"max\":
+        0.003,\n                    \"df\": 4.0,\n                    \"lb\": 0.0,\n
+        \                   \"ub\": 0.002,\n                    \"nstudies\": 1,\n
+        \                   \"sc\": \"Analytical or derived from analytical\",\n                    \"refndb\":
+        \"\",\n                    \"lm\": \"2014-08-01T04:00:00+0000\"\n                },\n
+        \               {\n                    \"nutrient_id\": \"676\",\n                    \"name\":
+        \"22:1 c\",\n                    \"group\": \"Lipids\",\n                    \"unit\":
+        \"g\",\n                    \"value\": \"0.001\",\n                    \"sourcecode\":
+        [\n                        1\n                    ],\n                    \"dp\":
+        18,\n                    \"se\": \"0.000\",\n                    \"min\":
+        0.0,\n                    \"max\": 0.003,\n                    \"df\": 4.0,\n
+        \                   \"lb\": 0.0,\n                    \"ub\": 0.002,\n                    \"nstudies\":
+        1,\n                    \"sc\": \"Analytical or derived from analytical\",\n
+        \                   \"refndb\": \"\",\n                    \"lm\": \"2014-05-01T04:00:00+0000\"\n
+        \               },\n                {\n                    \"nutrient_id\":
+        \"664\",\n                    \"name\": \"22:1 t\",\n                    \"group\":
+        \"Lipids\",\n                    \"unit\": \"g\",\n                    \"value\":
+        \"0.000\",\n                    \"sourcecode\": [\n                        1\n
+        \                   ],\n                    \"dp\": 18,\n                    \"se\":
+        \"0.000\",\n                    \"min\": 0.0,\n                    \"max\":
+        0.0,\n                    \"df\": 0.0,\n                    \"lb\": 0.0,\n
+        \                   \"ub\": 0.0,\n                    \"nstudies\": 1,\n                    \"sc\":
+        \"Analytical or derived from analytical\",\n                    \"refndb\":
+        \"\",\n                    \"lm\": \"2014-05-01T04:00:00+0000\"\n                },\n
+        \               {\n                    \"nutrient_id\": \"671\",\n                    \"name\":
+        \"24:1 c\",\n                    \"group\": \"Lipids\",\n                    \"unit\":
+        \"g\",\n                    \"value\": \"0.000\",\n                    \"sourcecode\":
+        [\n                        1\n                    ],\n                    \"dp\":
+        18,\n                    \"se\": \"0.000\",\n                    \"min\":
+        0.0,\n                    \"max\": 0.0,\n                    \"df\": 0.0,\n
+        \                   \"lb\": 0.0,\n                    \"ub\": 0.0,\n                    \"nstudies\":
+        1,\n                    \"sc\": \"Analytical or derived from analytical\",\n
+        \                   \"refndb\": \"\",\n                    \"lm\": \"2014-05-01T04:00:00+0000\"\n
+        \               },\n                {\n                    \"nutrient_id\":
+        \"646\",\n                    \"name\": \"Fatty acids, total polyunsaturated\",\n
+        \                   \"group\": \"Lipids\",\n                    \"unit\":
+        \"g\",\n                    \"value\": \"1.433\",\n                    \"sourcecode\":
+        \"\",\n                    \"dp\": \"\",\n                    \"se\": \"\",\n
+        \                   \"min\": null,\n                    \"max\": null,\n                    \"df\":
+        0.0,\n                    \"lb\": 0.0,\n                    \"ub\": 0.0,\n
+        \                   \"nstudies\": 0,\n                    \"sc\": \"Calculated
+        or imputed\",\n                    \"refndb\": \"\",\n                    \"lm\":
+        \"2014-08-01T04:00:00+0000\"\n                },\n                {\n                    \"nutrient_id\":
+        \"618\",\n                    \"name\": \"18:2 undifferentiated\",\n                    \"group\":
+        \"Lipids\",\n                    \"unit\": \"g\",\n                    \"value\":
+        \"1.179\",\n                    \"sourcecode\": [\n                        1\n
+        \                   ],\n                    \"dp\": 18,\n                    \"se\":
+        \"0.017\",\n                    \"min\": 1.046,\n                    \"max\":
+        1.276,\n                    \"df\": 4.0,\n                    \"lb\": 1.133,\n
+        \                   \"ub\": 1.226,\n                    \"nstudies\": 1,\n
+        \                   \"sc\": \"Analytical or derived from analytical\",\n                    \"refndb\":
+        \"\",\n                    \"lm\": \"2014-08-01T04:00:00+0000\"\n                },\n
+        \               {\n                    \"nutrient_id\": \"675\",\n                    \"name\":
+        \"18:2 n-6 c,c\",\n                    \"group\": \"Lipids\",\n                    \"unit\":
+        \"g\",\n                    \"value\": \"0.775\",\n                    \"sourcecode\":
+        [\n                        1\n                    ],\n                    \"dp\":
+        18,\n                    \"se\": \"0.019\",\n                    \"min\":
+        0.607,\n                    \"max\": 0.862,\n                    \"df\": 4.0,\n
+        \                   \"lb\": 0.724,\n                    \"ub\": 0.826,\n                    \"nstudies\":
+        1,\n                    \"sc\": \"Analytical or derived from analytical\",\n
+        \                   \"refndb\": \"\",\n                    \"lm\": \"2014-05-01T04:00:00+0000\"\n
+        \               },\n                {\n                    \"nutrient_id\":
+        \"670\",\n                    \"name\": \"18:2 CLAs\",\n                    \"group\":
+        \"Lipids\",\n                    \"unit\": \"g\",\n                    \"value\":
+        \"0.174\",\n                    \"sourcecode\": [\n                        1\n
+        \                   ],\n                    \"dp\": 18,\n                    \"se\":
+        \"0.004\",\n                    \"min\": 0.121,\n                    \"max\":
+        0.198,\n                    \"df\": 4.0,\n                    \"lb\": 0.162,\n
+        \                   \"ub\": 0.186,\n                    \"nstudies\": 1,\n
+        \                   \"sc\": \"Analytical or derived from analytical\",\n                    \"refndb\":
+        \"\",\n                    \"lm\": \"2014-05-01T04:00:00+0000\"\n                },\n
+        \               {\n                    \"nutrient_id\": \"665\",\n                    \"name\":
+        \"18:2 t not further defined\",\n                    \"group\": \"Lipids\",\n
+        \                   \"unit\": \"g\",\n                    \"value\": \"0.230\",\n
+        \                   \"sourcecode\": [\n                        1\n                    ],\n
+        \                   \"dp\": 18,\n                    \"se\": \"0.005\",\n
+        \                   \"min\": 0.208,\n                    \"max\": 0.273,\n
+        \                   \"df\": 4.0,\n                    \"lb\": 0.215,\n                    \"ub\":
+        0.245,\n                    \"nstudies\": 1,\n                    \"sc\":
+        \"Analytical or derived from analytical\",\n                    \"refndb\":
+        \"\",\n                    \"lm\": \"2014-05-01T04:00:00+0000\"\n                },\n
+        \               {\n                    \"nutrient_id\": \"619\",\n                    \"name\":
+        \"18:3 undifferentiated\",\n                    \"group\": \"Lipids\",\n                    \"unit\":
+        \"g\",\n                    \"value\": \"0.122\",\n                    \"sourcecode\":
+        [\n                        1\n                    ],\n                    \"dp\":
+        18,\n                    \"se\": \"0.011\",\n                    \"min\":
+        0.088,\n                    \"max\": 0.183,\n                    \"df\": 4.0,\n
+        \                   \"lb\": 0.09,\n                    \"ub\": 0.154,\n                    \"nstudies\":
+        1,\n                    \"sc\": \"Analytical or derived from analytical\",\n
+        \                   \"refndb\": \"\",\n                    \"lm\": \"2014-08-01T04:00:00+0000\"\n
+        \               },\n                {\n                    \"nutrient_id\":
+        \"851\",\n                    \"name\": \"18:3 n-3 c,c,c (ALA)\",\n                    \"group\":
+        \"Lipids\",\n                    \"unit\": \"g\",\n                    \"value\":
+        \"0.117\",\n                    \"sourcecode\": [\n                        1\n
+        \                   ],\n                    \"dp\": 18,\n                    \"se\":
+        \"0.011\",\n                    \"min\": 0.085,\n                    \"max\":
+        0.176,\n                    \"df\": 4.0,\n                    \"lb\": 0.084,\n
+        \                   \"ub\": 0.15,\n                    \"nstudies\": 1,\n
+        \                   \"sc\": \"Analytical or derived from analytical\",\n                    \"refndb\":
+        \"\",\n                    \"lm\": \"2014-05-01T04:00:00+0000\"\n                },\n
+        \               {\n                    \"nutrient_id\": \"685\",\n                    \"name\":
+        \"18:3 n-6 c,c,c\",\n                    \"group\": \"Lipids\",\n                    \"unit\":
+        \"g\",\n                    \"value\": \"0.001\",\n                    \"sourcecode\":
+        [\n                        1\n                    ],\n                    \"dp\":
+        18,\n                    \"se\": \"0.001\",\n                    \"min\":
+        0.0,\n                    \"max\": 0.003,\n                    \"df\": 3.0,\n
+        \                   \"lb\": -0.001,\n                    \"ub\": 0.003,\n
+        \                   \"nstudies\": 1,\n                    \"sc\": \"Analytical
+        or derived from analytical\",\n                    \"refndb\": \"\",\n                    \"lm\":
+        \"2014-05-01T04:00:00+0000\"\n                },\n                {\n                    \"nutrient_id\":
+        \"856\",\n                    \"name\": \"18:3i\",\n                    \"group\":
+        \"Lipids\",\n                    \"unit\": \"g\",\n                    \"value\":
+        \"0.003\",\n                    \"sourcecode\": [\n                        1\n
+        \                   ],\n                    \"dp\": 18,\n                    \"se\":
+        \"0.000\",\n                    \"min\": 0.003,\n                    \"max\":
+        0.004,\n                    \"df\": 4.0,\n                    \"lb\": 0.003,\n
+        \                   \"ub\": 0.004,\n                    \"nstudies\": 1,\n
+        \                   \"sc\": \"Analytical or derived from analytical\",\n                    \"refndb\":
+        \"\",\n                    \"lm\": \"2014-05-01T04:00:00+0000\"\n                },\n
+        \               {\n                    \"nutrient_id\": \"627\",\n                    \"name\":
+        \"18:4\",\n                    \"group\": \"Lipids\",\n                    \"unit\":
+        \"g\",\n                    \"value\": \"0.000\",\n                    \"sourcecode\":
+        [\n                        1\n                    ],\n                    \"dp\":
+        18,\n                    \"se\": \"0.000\",\n                    \"min\":
+        0.0,\n                    \"max\": 0.002,\n                    \"df\": 7.0,\n
+        \                   \"lb\": 0.0,\n                    \"ub\": 0.0,\n                    \"nstudies\":
+        1,\n                    \"sc\": \"Analytical or derived from analytical\",\n
+        \                   \"refndb\": \"\",\n                    \"lm\": \"1995-02-01T05:00:00+0000\"\n
+        \               },\n                {\n                    \"nutrient_id\":
+        \"672\",\n                    \"name\": \"20:2 n-6 c,c\",\n                    \"group\":
+        \"Lipids\",\n                    \"unit\": \"g\",\n                    \"value\":
+        \"0.007\",\n                    \"sourcecode\": [\n                        1\n
+        \                   ],\n                    \"dp\": 18,\n                    \"se\":
+        \"0.000\",\n                    \"min\": 0.005,\n                    \"max\":
+        0.008,\n                    \"df\": 8.0,\n                    \"lb\": 0.007,\n
+        \                   \"ub\": 0.007,\n                    \"nstudies\": 1,\n
+        \                   \"sc\": \"Analytical or derived from analytical\",\n                    \"refndb\":
+        \"\",\n                    \"lm\": \"2014-05-01T04:00:00+0000\"\n                },\n
+        \               {\n                    \"nutrient_id\": \"689\",\n                    \"name\":
+        \"20:3 undifferentiated\",\n                    \"group\": \"Lipids\",\n                    \"unit\":
+        \"g\",\n                    \"value\": \"0.037\",\n                    \"sourcecode\":
+        [\n                        1\n                    ],\n                    \"dp\":
+        18,\n                    \"se\": \"0.001\",\n                    \"min\":
+        0.03,\n                    \"max\": 0.043,\n                    \"df\": 4.0,\n
+        \                   \"lb\": 0.034,\n                    \"ub\": 0.041,\n                    \"nstudies\":
+        1,\n                    \"sc\": \"Analytical or derived from analytical\",\n
+        \                   \"refndb\": \"\",\n                    \"lm\": \"2014-05-01T04:00:00+0000\"\n
+        \               },\n                {\n                    \"nutrient_id\":
+        \"853\",\n                    \"name\": \"20:3 n-6\",\n                    \"group\":
+        \"Lipids\",\n                    \"unit\": \"g\",\n                    \"value\":
+        \"0.036\",\n                    \"sourcecode\": [\n                        1\n
+        \                   ],\n                    \"dp\": 18,\n                    \"se\":
+        \"0.001\",\n                    \"min\": 0.03,\n                    \"max\":
+        0.042,\n                    \"df\": 4.0,\n                    \"lb\": 0.033,\n
+        \                   \"ub\": 0.038,\n                    \"nstudies\": 1,\n
+        \                   \"sc\": \"Analytical or derived from analytical\",\n                    \"refndb\":
+        \"\",\n                    \"lm\": \"2014-05-01T04:00:00+0000\"\n                },\n
+        \               {\n                    \"nutrient_id\": \"620\",\n                    \"name\":
+        \"20:4 undifferentiated\",\n                    \"group\": \"Lipids\",\n                    \"unit\":
+        \"g\",\n                    \"value\": \"0.050\",\n                    \"sourcecode\":
+        [\n                        1\n                    ],\n                    \"dp\":
+        18,\n                    \"se\": \"0.001\",\n                    \"min\":
+        0.041,\n                    \"max\": 0.056,\n                    \"df\": 4.0,\n
+        \                   \"lb\": 0.046,\n                    \"ub\": 0.055,\n                    \"nstudies\":
+        1,\n                    \"sc\": \"Analytical or derived from analytical\",\n
+        \                   \"refndb\": \"\",\n                    \"lm\": \"2014-08-01T04:00:00+0000\"\n
+        \               },\n                {\n                    \"nutrient_id\":
+        \"629\",\n                    \"name\": \"20:5 n-3 (EPA)\",\n                    \"group\":
+        \"Lipids\",\n                    \"unit\": \"g\",\n                    \"value\":
+        \"0.010\",\n                    \"sourcecode\": [\n                        1\n
+        \                   ],\n                    \"dp\": 18,\n                    \"se\":
+        \"0.001\",\n                    \"min\": 0.006,\n                    \"max\":
+        0.016,\n                    \"df\": 3.0,\n                    \"lb\": 0.007,\n
+        \                   \"ub\": 0.014,\n                    \"nstudies\": 1,\n
+        \                   \"sc\": \"Analytical or derived from analytical\",\n                    \"refndb\":
+        \"\",\n                    \"lm\": \"2014-08-01T04:00:00+0000\"\n                },\n
+        \               {\n                    \"nutrient_id\": \"858\",\n                    \"name\":
+        \"22:4\",\n                    \"group\": \"Lipids\",\n                    \"unit\":
+        \"g\",\n                    \"value\": \"0.008\",\n                    \"sourcecode\":
+        [\n                        1\n                    ],\n                    \"dp\":
+        18,\n                    \"se\": \"0.001\",\n                    \"min\":
+        0.006,\n                    \"max\": 0.01,\n                    \"df\": 4.0,\n
+        \                   \"lb\": 0.006,\n                    \"ub\": 0.01,\n                    \"nstudies\":
+        1,\n                    \"sc\": \"Analytical or derived from analytical\",\n
+        \                   \"refndb\": \"\",\n                    \"lm\": \"2014-05-01T04:00:00+0000\"\n
+        \               },\n                {\n                    \"nutrient_id\":
+        \"631\",\n                    \"name\": \"22:5 n-3 (DPA)\",\n                    \"group\":
+        \"Lipids\",\n                    \"unit\": \"g\",\n                    \"value\":
+        \"0.017\",\n                    \"sourcecode\": [\n                        1\n
+        \                   ],\n                    \"dp\": 18,\n                    \"se\":
+        \"0.001\",\n                    \"min\": 0.013,\n                    \"max\":
+        0.024,\n                    \"df\": 4.0,\n                    \"lb\": 0.014,\n
+        \                   \"ub\": 0.02,\n                    \"nstudies\": 1,\n
+        \                   \"sc\": \"Analytical or derived from analytical\",\n                    \"refndb\":
+        \"\",\n                    \"lm\": \"2014-08-01T04:00:00+0000\"\n                },\n
+        \               {\n                    \"nutrient_id\": \"621\",\n                    \"name\":
+        \"22:6 n-3 (DHA)\",\n                    \"group\": \"Lipids\",\n                    \"unit\":
+        \"g\",\n                    \"value\": \"0.000\",\n                    \"sourcecode\":
+        [\n                        1\n                    ],\n                    \"dp\":
+        18,\n                    \"se\": \"0.000\",\n                    \"min\":
+        0.0,\n                    \"max\": 0.003,\n                    \"df\": 3.0,\n
+        \                   \"lb\": -0.001,\n                    \"ub\": 0.002,\n
+        \                   \"nstudies\": 1,\n                    \"sc\": \"Analytical
+        or derived from analytical\",\n                    \"refndb\": \"\",\n                    \"lm\":
+        \"2014-05-01T04:00:00+0000\"\n                },\n                {\n                    \"nutrient_id\":
+        \"605\",\n                    \"name\": \"Fatty acids, total trans\",\n                    \"group\":
+        \"Lipids\",\n                    \"unit\": \"g\",\n                    \"value\":
+        \"1.179\",\n                    \"sourcecode\": \"\",\n                    \"dp\":
+        \"\",\n                    \"se\": \"\",\n                    \"min\": null,\n
+        \                   \"max\": null,\n                    \"df\": 0.0,\n                    \"lb\":
+        0.0,\n                    \"ub\": 0.0,\n                    \"nstudies\":
+        0,\n                    \"sc\": \"Calculated or imputed\",\n                    \"refndb\":
+        \"\",\n                    \"lm\": \"2014-05-01T04:00:00+0000\"\n                },\n
+        \               {\n                    \"nutrient_id\": \"693\",\n                    \"name\":
+        \"Fatty acids, total trans-monoenoic\",\n                    \"group\": \"Lipids\",\n
+        \                   \"unit\": \"g\",\n                    \"value\": \"0.946\",\n
+        \                   \"sourcecode\": \"\",\n                    \"dp\": \"\",\n
+        \                   \"se\": \"\",\n                    \"min\": null,\n                    \"max\":
+        null,\n                    \"df\": 0.0,\n                    \"lb\": 0.0,\n
+        \                   \"ub\": 0.0,\n                    \"nstudies\": 0,\n                    \"sc\":
+        \"Calculated or imputed\",\n                    \"refndb\": \"\",\n                    \"lm\":
+        \"2014-05-01T04:00:00+0000\"\n                },\n                {\n                    \"nutrient_id\":
+        \"601\",\n                    \"name\": \"Cholesterol\",\n                    \"group\":
+        \"Lipids\",\n                    \"unit\": \"mg\",\n                    \"value\":
+        \"102\",\n                    \"sourcecode\": [\n                        1,\n
+        \                       2\n                    ],\n                    \"dp\":
+        12,\n                    \"se\": \"4.172\",\n                    \"min\":
+        91.0,\n                    \"max\": 119.0,\n                    \"df\": 2.0,\n
+        \                   \"lb\": 83.888,\n                    \"ub\": 119.41,\n
+        \                   \"nstudies\": 2,\n                    \"sc\": \"Analytical
+        or derived from analytical\",\n                    \"refndb\": \"\",\n                    \"lm\":
+        \"2014-08-01T04:00:00+0000\"\n                },\n                {\n                    \"nutrient_id\":
+        \"501\",\n                    \"name\": \"Tryptophan\",\n                    \"group\":
+        \"Amino Acids\",\n                    \"unit\": \"g\",\n                    \"value\":
+        \"0.558\",\n                    \"sourcecode\": [\n                        4\n
+        \                   ],\n                    \"dp\": \"\",\n                    \"se\":
+        \"\",\n                    \"min\": null,\n                    \"max\": null,\n
+        \                   \"df\": 0.0,\n                    \"lb\": 0.0,\n                    \"ub\":
+        0.0,\n                    \"nstudies\": 0,\n                    \"sc\": \"Analytical
+        or derived from analytical\",\n                    \"refndb\": \"\",\n                    \"lm\":
+        \"2014-08-01T04:00:00+0000\"\n                },\n                {\n                    \"nutrient_id\":
+        \"502\",\n                    \"name\": \"Threonine\",\n                    \"group\":
+        \"Amino Acids\",\n                    \"unit\": \"g\",\n                    \"value\":
+        \"1.066\",\n                    \"sourcecode\": [\n                        4\n
+        \                   ],\n                    \"dp\": \"\",\n                    \"se\":
+        \"\",\n                    \"min\": null,\n                    \"max\": null,\n
+        \                   \"df\": 0.0,\n                    \"lb\": 0.0,\n                    \"ub\":
+        0.0,\n                    \"nstudies\": 0,\n                    \"sc\": \"Analytical
+        or derived from analytical\",\n                    \"refndb\": \"\",\n                    \"lm\":
+        \"2014-08-01T04:00:00+0000\"\n                },\n                {\n                    \"nutrient_id\":
+        \"503\",\n                    \"name\": \"Isoleucine\",\n                    \"group\":
+        \"Amino Acids\",\n                    \"unit\": \"g\",\n                    \"value\":
+        \"1.231\",\n                    \"sourcecode\": [\n                        4\n
+        \                   ],\n                    \"dp\": \"\",\n                    \"se\":
+        \"\",\n                    \"min\": null,\n                    \"max\": null,\n
+        \                   \"df\": 0.0,\n                    \"lb\": 0.0,\n                    \"ub\":
+        0.0,\n                    \"nstudies\": 0,\n                    \"sc\": \"Analytical
+        or derived from analytical\",\n                    \"refndb\": \"\",\n                    \"lm\":
+        \"2014-08-01T04:00:00+0000\"\n                },\n                {\n                    \"nutrient_id\":
+        \"504\",\n                    \"name\": \"Leucine\",\n                    \"group\":
+        \"Amino Acids\",\n                    \"unit\": \"g\",\n                    \"value\":
+        \"1.980\",\n                    \"sourcecode\": [\n                        4\n
+        \                   ],\n                    \"dp\": \"\",\n                    \"se\":
+        \"\",\n                    \"min\": null,\n                    \"max\": null,\n
+        \                   \"df\": 0.0,\n                    \"lb\": 0.0,\n                    \"ub\":
+        0.0,\n                    \"nstudies\": 0,\n                    \"sc\": \"Analytical
+        or derived from analytical\",\n                    \"refndb\": \"\",\n                    \"lm\":
+        \"2014-08-01T04:00:00+0000\"\n                },\n                {\n                    \"nutrient_id\":
+        \"505\",\n                    \"name\": \"Lysine\",\n                    \"group\":
+        \"Amino Acids\",\n                    \"unit\": \"g\",\n                    \"value\":
+        \"1.046\",\n                    \"sourcecode\": [\n                        4\n
+        \                   ],\n                    \"dp\": \"\",\n                    \"se\":
+        \"\",\n                    \"min\": null,\n                    \"max\": null,\n
+        \                   \"df\": 0.0,\n                    \"lb\": 0.0,\n                    \"ub\":
+        0.0,\n                    \"nstudies\": 0,\n                    \"sc\": \"Analytical
+        or derived from analytical\",\n                    \"refndb\": \"\",\n                    \"lm\":
+        \"2014-08-01T04:00:00+0000\"\n                },\n                {\n                    \"nutrient_id\":
+        \"506\",\n                    \"name\": \"Methionine\",\n                    \"group\":
+        \"Amino Acids\",\n                    \"unit\": \"g\",\n                    \"value\":
+        \"0.558\",\n                    \"sourcecode\": [\n                        4\n
+        \                   ],\n                    \"dp\": \"\",\n                    \"se\":
+        \"\",\n                    \"min\": null,\n                    \"max\": null,\n
+        \                   \"df\": 0.0,\n                    \"lb\": 0.0,\n                    \"ub\":
+        0.0,\n                    \"nstudies\": 0,\n                    \"sc\": \"Analytical
+        or derived from analytical\",\n                    \"refndb\": \"\",\n                    \"lm\":
+        \"2014-08-01T04:00:00+0000\"\n                },\n                {\n                    \"nutrient_id\":
+        \"507\",\n                    \"name\": \"Cystine\",\n                    \"group\":
+        \"Amino Acids\",\n                    \"unit\": \"g\",\n                    \"value\":
+        \"0.125\",\n                    \"sourcecode\": [\n                        4\n
+        \                   ],\n                    \"dp\": \"\",\n                    \"se\":
+        \"\",\n                    \"min\": null,\n                    \"max\": null,\n
+        \                   \"df\": 0.0,\n                    \"lb\": 0.0,\n                    \"ub\":
+        0.0,\n                    \"nstudies\": 0,\n                    \"sc\": \"Analytical
+        or derived from analytical\",\n                    \"refndb\": \"\",\n                    \"lm\":
+        \"2014-05-01T04:00:00+0000\"\n                },\n                {\n                    \"nutrient_id\":
+        \"508\",\n                    \"name\": \"Phenylalanine\",\n                    \"group\":
+        \"Amino Acids\",\n                    \"unit\": \"g\",\n                    \"value\":
+        \"1.096\",\n                    \"sourcecode\": [\n                        4\n
+        \                   ],\n                    \"dp\": \"\",\n                    \"se\":
+        \"\",\n                    \"min\": null,\n                    \"max\": null,\n
+        \                   \"df\": 0.0,\n                    \"lb\": 0.0,\n                    \"ub\":
+        0.0,\n                    \"nstudies\": 0,\n                    \"sc\": \"Analytical
+        or derived from analytical\",\n                    \"refndb\": \"\",\n                    \"lm\":
+        \"2014-08-01T04:00:00+0000\"\n                },\n                {\n                    \"nutrient_id\":
+        \"509\",\n                    \"name\": \"Tyrosine\",\n                    \"group\":
+        \"Amino Acids\",\n                    \"unit\": \"g\",\n                    \"value\":
+        \"1.131\",\n                    \"sourcecode\": [\n                        4\n
+        \                   ],\n                    \"dp\": \"\",\n                    \"se\":
+        \"\",\n                    \"min\": null,\n                    \"max\": null,\n
+        \                   \"df\": 0.0,\n                    \"lb\": 0.0,\n                    \"ub\":
+        0.0,\n                    \"nstudies\": 0,\n                    \"sc\": \"Analytical
+        or derived from analytical\",\n                    \"refndb\": \"\",\n                    \"lm\":
+        \"2014-08-01T04:00:00+0000\"\n                },\n                {\n                    \"nutrient_id\":
+        \"510\",\n                    \"name\": \"Valine\",\n                    \"group\":
+        \"Amino Acids\",\n                    \"unit\": \"g\",\n                    \"value\":
+        \"1.433\",\n                    \"sourcecode\": [\n                        4\n
+        \                   ],\n                    \"dp\": \"\",\n                    \"se\":
+        \"\",\n                    \"min\": null,\n                    \"max\": null,\n
+        \                   \"df\": 0.0,\n                    \"lb\": 0.0,\n                    \"ub\":
+        0.0,\n                    \"nstudies\": 0,\n                    \"sc\": \"Analytical
+        or derived from analytical\",\n                    \"refndb\": \"\",\n                    \"lm\":
+        \"2014-08-01T04:00:00+0000\"\n                },\n                {\n                    \"nutrient_id\":
+        \"511\",\n                    \"name\": \"Arginine\",\n                    \"group\":
+        \"Amino Acids\",\n                    \"unit\": \"g\",\n                    \"value\":
+        \"0.558\",\n                    \"sourcecode\": [\n                        4\n
+        \                   ],\n                    \"dp\": \"\",\n                    \"se\":
+        \"\",\n                    \"min\": null,\n                    \"max\": null,\n
+        \                   \"df\": 0.0,\n                    \"lb\": 0.0,\n                    \"ub\":
+        0.0,\n                    \"nstudies\": 0,\n                    \"sc\": \"Analytical
+        or derived from analytical\",\n                    \"refndb\": \"\",\n                    \"lm\":
+        \"2014-08-01T04:00:00+0000\"\n                },\n                {\n                    \"nutrient_id\":
+        \"512\",\n                    \"name\": \"Histidine\",\n                    \"group\":
+        \"Amino Acids\",\n                    \"unit\": \"g\",\n                    \"value\":
+        \"0.558\",\n                    \"sourcecode\": [\n                        4\n
+        \                   ],\n                    \"dp\": \"\",\n                    \"se\":
+        \"\",\n                    \"min\": null,\n                    \"max\": null,\n
+        \                   \"df\": 0.0,\n                    \"lb\": 0.0,\n                    \"ub\":
+        0.0,\n                    \"nstudies\": 0,\n                    \"sc\": \"Analytical
+        or derived from analytical\",\n                    \"refndb\": \"\",\n                    \"lm\":
+        \"2014-08-01T04:00:00+0000\"\n                },\n                {\n                    \"nutrient_id\":
+        \"513\",\n                    \"name\": \"Alanine\",\n                    \"group\":
+        \"Amino Acids\",\n                    \"unit\": \"g\",\n                    \"value\":
+        \"0.767\",\n                    \"sourcecode\": [\n                        4\n
+        \                   ],\n                    \"dp\": \"\",\n                    \"se\":
+        \"\",\n                    \"min\": null,\n                    \"max\": null,\n
+        \                   \"df\": 0.0,\n                    \"lb\": 0.0,\n                    \"ub\":
+        0.0,\n                    \"nstudies\": 0,\n                    \"sc\": \"Analytical
+        or derived from analytical\",\n                    \"refndb\": \"\",\n                    \"lm\":
+        \"2014-08-01T04:00:00+0000\"\n                },\n                {\n                    \"nutrient_id\":
+        \"514\",\n                    \"name\": \"Aspartic acid\",\n                    \"group\":
+        \"Amino Acids\",\n                    \"unit\": \"g\",\n                    \"value\":
+        \"1.770\",\n                    \"sourcecode\": [\n                        4\n
+        \                   ],\n                    \"dp\": \"\",\n                    \"se\":
+        \"\",\n                    \"min\": null,\n                    \"max\": null,\n
+        \                   \"df\": 0.0,\n                    \"lb\": 0.0,\n                    \"ub\":
+        0.0,\n                    \"nstudies\": 0,\n                    \"sc\": \"Analytical
+        or derived from analytical\",\n                    \"refndb\": \"\",\n                    \"lm\":
+        \"2014-08-01T04:00:00+0000\"\n                },\n                {\n                    \"nutrient_id\":
+        \"515\",\n                    \"name\": \"Glutamic acid\",\n                    \"group\":
+        \"Amino Acids\",\n                    \"unit\": \"g\",\n                    \"value\":
+        \"4.834\",\n                    \"sourcecode\": [\n                        4\n
+        \                   ],\n                    \"dp\": \"\",\n                    \"se\":
+        \"\",\n                    \"min\": null,\n                    \"max\": null,\n
+        \                   \"df\": 0.0,\n                    \"lb\": 0.0,\n                    \"ub\":
+        0.0,\n                    \"nstudies\": 0,\n                    \"sc\": \"Analytical
+        or derived from analytical\",\n                    \"refndb\": \"\",\n                    \"lm\":
+        \"2014-08-01T04:00:00+0000\"\n                },\n                {\n                    \"nutrient_id\":
+        \"516\",\n                    \"name\": \"Glycine\",\n                    \"group\":
+        \"Amino Acids\",\n                    \"unit\": \"g\",\n                    \"value\":
+        \"0.558\",\n                    \"sourcecode\": [\n                        4\n
+        \                   ],\n                    \"dp\": \"\",\n                    \"se\":
+        \"\",\n                    \"min\": null,\n                    \"max\": null,\n
+        \                   \"df\": 0.0,\n                    \"lb\": 0.0,\n                    \"ub\":
+        0.0,\n                    \"nstudies\": 0,\n                    \"sc\": \"Analytical
+        or derived from analytical\",\n                    \"refndb\": \"\",\n                    \"lm\":
+        \"2014-08-01T04:00:00+0000\"\n                },\n                {\n                    \"nutrient_id\":
+        \"517\",\n                    \"name\": \"Proline\",\n                    \"group\":
+        \"Amino Acids\",\n                    \"unit\": \"g\",\n                    \"value\":
+        \"2.549\",\n                    \"sourcecode\": [\n                        4\n
+        \                   ],\n                    \"dp\": \"\",\n                    \"se\":
+        \"\",\n                    \"min\": null,\n                    \"max\": null,\n
+        \                   \"df\": 0.0,\n                    \"lb\": 0.0,\n                    \"ub\":
+        0.0,\n                    \"nstudies\": 0,\n                    \"sc\": \"Analytical
+        or derived from analytical\",\n                    \"refndb\": \"\",\n                    \"lm\":
+        \"2014-08-01T04:00:00+0000\"\n                },\n                {\n                    \"nutrient_id\":
+        \"518\",\n                    \"name\": \"Serine\",\n                    \"group\":
+        \"Amino Acids\",\n                    \"unit\": \"g\",\n                    \"value\":
+        \"0.796\",\n                    \"sourcecode\": [\n                        4\n
+        \                   ],\n                    \"dp\": \"\",\n                    \"se\":
+        \"\",\n                    \"min\": null,\n                    \"max\": null,\n
+        \                   \"df\": 0.0,\n                    \"lb\": 0.0,\n                    \"ub\":
+        0.0,\n                    \"nstudies\": 0,\n                    \"sc\": \"Analytical
+        or derived from analytical\",\n                    \"refndb\": \"\",\n                    \"lm\":
+        \"2014-08-01T04:00:00+0000\"\n                },\n                {\n                    \"nutrient_id\":
+        \"521\",\n                    \"name\": \"Hydroxyproline\",\n                    \"group\":
+        \"Amino Acids\",\n                    \"unit\": \"g\",\n                    \"value\":
+        \"0.000\",\n                    \"sourcecode\": [\n                        2\n
+        \                   ],\n                    \"dp\": 3,\n                    \"se\":
+        \"0.000\",\n                    \"min\": 0.0,\n                    \"max\":
+        0.0,\n                    \"df\": 0.0,\n                    \"lb\": 0.0,\n
+        \                   \"ub\": 0.0,\n                    \"nstudies\": 1,\n                    \"sc\":
+        \"Analytical or derived from analytical\",\n                    \"refndb\":
+        \"\",\n                    \"lm\": \"2014-08-01T04:00:00+0000\"\n                },\n
+        \               {\n                    \"nutrient_id\": \"221\",\n                    \"name\":
+        \"Alcohol, ethyl\",\n                    \"group\": \"Other\",\n                    \"unit\":
+        \"g\",\n                    \"value\": \"0.0\",\n                    \"sourcecode\":
+        \"\",\n                    \"dp\": \"\",\n                    \"se\": \"\",\n
+        \                   \"min\": null,\n                    \"max\": null,\n                    \"df\":
+        0.0,\n                    \"lb\": 0.0,\n                    \"ub\": 0.0,\n
+        \                   \"nstudies\": 0,\n                    \"sc\": \"Assumed
+        zero\",\n                    \"refndb\": \"\",\n                    \"lm\":
+        \"1985-04-01T05:00:00+0000\"\n                },\n                {\n                    \"nutrient_id\":
+        \"262\",\n                    \"name\": \"Caffeine\",\n                    \"group\":
+        \"Other\",\n                    \"unit\": \"mg\",\n                    \"value\":
+        \"0\",\n                    \"sourcecode\": \"\",\n                    \"dp\":
+        \"\",\n                    \"se\": \"\",\n                    \"min\": null,\n
+        \                   \"max\": null,\n                    \"df\": 0.0,\n                    \"lb\":
+        0.0,\n                    \"ub\": 0.0,\n                    \"nstudies\":
+        0,\n                    \"sc\": \"Assumed zero\",\n                    \"refndb\":
+        \"\",\n                    \"lm\": \"2001-02-01T05:00:00+0000\"\n                },\n
+        \               {\n                    \"nutrient_id\": \"263\",\n                    \"name\":
+        \"Theobromine\",\n                    \"group\": \"Other\",\n                    \"unit\":
+        \"mg\",\n                    \"value\": \"0\",\n                    \"sourcecode\":
+        \"\",\n                    \"dp\": \"\",\n                    \"se\": \"\",\n
+        \                   \"min\": null,\n                    \"max\": null,\n                    \"df\":
+        0.0,\n                    \"lb\": 0.0,\n                    \"ub\": 0.0,\n
+        \                   \"nstudies\": 0,\n                    \"sc\": \"Assumed
+        zero\",\n                    \"refndb\": \"\",\n                    \"lm\":
+        \"2001-02-01T05:00:00+0000\"\n                }\n            ]\n        },\n
+        \       \"sources\": [\n            {\n                \"id\": 1,\n                \"title\":
+        \"National Food and Nutrient Analysis Program Wave 17e\",\n                \"authors\":
+        \"Nutrient Data Laboratory, ARS, USDA\",\n                \"vol\": \"Beltsville\",\n
+        \               \"iss\": \"MD\",\n                \"year\": \"2013\"\n            },\n
+        \           {\n                \"id\": 2,\n                \"title\": \"National
+        Food and Nutrient Analysis Program Wave 4b\",\n                \"authors\":
+        \"Nutrient Data Laboratory, ARS, USDA\",\n                \"vol\": \"Beltsville\",\n
+        \               \"iss\": \"MD\",\n                \"year\": \"2001\"\n            },\n
+        \           {\n                \"id\": 3,\n                \"title\": \"Carotenoid
+        analyses of U.S. foods, Food Composition Laboratory\",\n                \"authors\":
+        \"National Institutes of Health (NIH)\",\n                \"vol\": \"\",\n
+        \               \"iss\": \"\",\n                \"year\": \"1997\"\n            },\n
+        \           {\n                \"id\": 4,\n                \"title\": \"National
+        Food and Nutrient Analysis Program Wave 4c\",\n                \"authors\":
+        \"Nutrient Data Laboratory, ARS, USDA\",\n                \"vol\": \"Beltsville\",\n
+        \               \"iss\": \"MD\",\n                \"year\": \"2001\"\n            }\n
+        \       ],\n        \"footnotes\": [\n            \n        ]\n    }\n}"
+    http_version: 
+  recorded_at: Sat, 26 Sep 2015 21:34:42 GMT
+recorded_with: VCR 2.9.3
