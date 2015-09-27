@@ -4,16 +4,17 @@
 
 # NDB-Ruby
 
-This is a simple ruby wrapper around the National Nutrient Database REST API
+This is a simple Ruby wrapper around the National Nutrient Database REST API
 provided by the United States Department of Agriculture. In general, all of the
 parameters accepted by the API can be specified through the methods in this gem.
 
 This gem assumes that you want data returned in JSON format. There may be
 support for XML in the future.
 
-## Setting your API Key
+## Setting the API Key
 
-If you're using Rails, you can set up your API in an initializer like this:
+All calls to the API require a registered data.gov api_key. If you're using
+Rails, you can set up your API in an initializer like this:
 
 ```ruby
 # config/initializer/ndb-api.rb
@@ -31,8 +32,8 @@ The Search request is wrapped in a simple ```.perform``` method on
 NDB::Search.perform(q: "butter")
 ```
 
-It takes all of the options mentioned in the Search API documentation, except
-the format option.
+Full list of options can be found in the [Search
+Documentation](http://ndb.nal.usda.gov/ndb/doc/apilist/API-SEARCH.md)
 
 ## List
 
@@ -43,8 +44,8 @@ The List request is wrapped in a simple ```.retrieve``` method on
 NDB::List.retrieve(lt: "n")
 ```
 
-It takes all of the options mentioned in the List API documentation, except for
-the format option.
+Full list of options can be found in the [List
+Documentation](http://ndb.nal.usda.gov/ndb/doc/apilist/API-LIST.md)
 
 ## Food Report
 
@@ -55,5 +56,17 @@ The Food Report request is wrapped in a simple ```.retrieve``` method on
 NDB::FoodReport.retrieve(ndbno: "01009", type: "b")
 ```
 
-It takes all of the options mentioned in the Food Report API documentations,
-except for the format option.
+Full list of options can be found in the [Food Report
+Documentation](http://ndb.nal.usda.gov/ndb/doc/apilist/API-FOOD-REPORT.md)
+
+## Nutrient Report
+
+The Nutrient Report request is wrapped in a simple ```.retrieve``` method on
+```NDB::NutrientReport``` and can be used like so:
+
+```ruby
+NDB::NutrientReport.retrieve(nutrients: ["205", "204])
+```
+
+Full list of options can be found in the [Nutrient Report
+Documentation](http://ndb.nal.usda.gov/ndb/doc/apilist/API-NUTRIENT-REPORT.md)

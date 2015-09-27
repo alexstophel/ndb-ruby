@@ -33,13 +33,11 @@ http_interactions:
       Content-Type:
       - application/json;charset=UTF-8
       Date:
-      - Sat, 26 Sep 2015 21:08:39 GMT
+      - Sun, 27 Sep 2015 00:52:10 GMT
       Location:
       - ''
       Server:
       - nginx
-      Set-Cookie:
-      - BIGipServerndb-pool=265882378.20480.0000; path=/
       Vary:
       - Accept-Encoding
       Via:
@@ -47,11 +45,11 @@ http_interactions:
       X-Cache:
       - MISS
       X-Ratelimit-Limit:
-      - '30'
+      - '1000'
       X-Ratelimit-Remaining:
-      - '14'
+      - '977'
       X-Varnish:
-      - '40105719'
+      - '41248187'
       Transfer-Encoding:
       - chunked
       Connection:
@@ -210,6 +208,6 @@ http_interactions:
                 ]
             }
         }
-    http_version: 
-  recorded_at: Sat, 26 Sep 2015 21:08:39 GMT
+    http_version:
+  recorded_at: Sun, 27 Sep 2015 00:52:10 GMT
 recorded_with: VCR 2.9.3

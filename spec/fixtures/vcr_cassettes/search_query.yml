@@ -33,7 +33,7 @@ http_interactions:
       Content-Type:
       - application/json;charset=UTF-8
       Date:
-      - Sat, 26 Sep 2015 21:08:39 GMT
+      - Sun, 27 Sep 2015 00:52:09 GMT
       Location:
       - ''
       Server:
@@ -45,11 +45,11 @@ http_interactions:
       X-Cache:
       - MISS
       X-Ratelimit-Limit:
-      - '30'
+      - '1000'
       X-Ratelimit-Remaining:
-      - '13'
+      - '979'
       X-Varnish:
-      - '40105722'
+      - '41905945'
       Transfer-Encoding:
       - chunked
       Connection:
@@ -370,6 +370,6 @@ http_interactions:
                 ]
             }
         }
-    http_version: 
-  recorded_at: Sat, 26 Sep 2015 21:08:39 GMT
+    http_version:
+  recorded_at: Sun, 27 Sep 2015 00:52:09 GMT
 recorded_with: VCR 2.9.3

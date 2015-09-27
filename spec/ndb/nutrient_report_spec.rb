@@ -45,6 +45,5 @@ describe NDB::NutrientReport do
         expect(result["report"]["subset"]).to eq("Abridged List")
       end
     end
-
   end
 end

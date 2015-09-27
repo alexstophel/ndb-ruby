@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.nal.usda.gov/ndb/nutrients?api_key=gzoe9jgQRFIuAgnX4reii20Gpdc4kkjQ9lqo8cTI&format=JSON&fq=&max=50&nutrients=205&offset=0&sort=f&subset=1
+    uri: http://api.nal.usda.gov/ndb/nutrients?api_key=DEMO_KEY&format=JSON&fq=&max=50&nutrients=205&offset=0&sort=f&subset=1
     body:
       encoding: US-ASCII
       string: ''
@@ -821,6 +821,6 @@ http_interactions:
                 ]
             }
         }
-    http_version: 
+    http_version:
   recorded_at: Sun, 27 Sep 2015 01:21:24 GMT
 recorded_with: VCR 2.9.3
