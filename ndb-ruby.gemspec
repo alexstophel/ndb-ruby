@@ -9,8 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors = ["Alex Stophel"]
   spec.email = ["alexstophel@gmail.com"]
 
-  spec.summary = "Gem to wrap NDB API"
-  spec.description = "Gem to wrap NDB API"
+  spec.summary = "Ruby wrapper for the National Nutrient Database RESTful API"
   spec.license = "MIT"
 
   spec.files = `git ls-files`.split("\n")
@@ -21,11 +20,11 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.10"
   spec.add_development_dependency "rake", "~> 10.0"
-  spec.add_development_dependency "vcr"
-  spec.add_development_dependency "webmock"
-  spec.add_development_dependency "rspec"
-  spec.add_development_dependency "factory_girl"
-  spec.add_development_dependency "codeclimate-test-reporter"
+  spec.add_development_dependency "vcr", "~> 2.0"
+  spec.add_development_dependency "webmock", "~> 1.0"
+  spec.add_development_dependency "rspec", "3.0"
+  spec.add_development_dependency "factory_girl", "~> 4.0"
+  spec.add_development_dependency "codeclimate-test-reporter", "~> 0"
 
   spec.add_dependency "faraday"
   spec.add_dependency "json"
