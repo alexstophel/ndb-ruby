@@ -1,5 +1,5 @@
 module NDB
-  class FoodReport
+  module FoodReport
     def self.retrieve(ndbno:, type: "b")
       params = "#{base_uri}?ndbno=#{ndbno}&type=#{type}&api_key=#{NDB.api_key}"
       response = Faraday.get(params)
