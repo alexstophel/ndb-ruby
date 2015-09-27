@@ -1,0 +1,824 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.nal.usda.gov/ndb/nutrients?api_key=gzoe9jgQRFIuAgnX4reii20Gpdc4kkjQ9lqo8cTI&format=JSON&fq=&max=50&nutrients=205&offset=1&sort=f&subset=0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Sun, 27 Sep 2015 01:09:26 GMT
+      Location:
+      - ''
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 varnish-v4
+      X-Cache:
+      - MISS
+      X-Ratelimit-Limit:
+      - '1000'
+      X-Ratelimit-Remaining:
+      - '969'
+      X-Varnish:
+      - '41775296'
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+            "report": {
+                "sr": "27",
+                "groups": "All groups",
+                "subset": "All foods",
+                "end": 51,
+                "start": 1,
+                "total": 8372,
+                "foods": [
+                    {
+                        "ndbno": "09002",
+                        "name": "Acerola juice, raw",
+                        "weight": 242.0,
+                        "measure": "1.0 cup",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "11.62",
+                                "gm": 4.8
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "09001",
+                        "name": "Acerola, (west indian cherry), raw",
+                        "weight": 98.0,
+                        "measure": "1.0 cup",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "7.54",
+                                "gm": 7.69
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "14006",
+                        "name": "Alcoholic beverage, beer, light",
+                        "weight": 29.5,
+                        "measure": "1.0 fl oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "0.48",
+                                "gm": 1.64
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "14007",
+                        "name": "Alcoholic beverage, beer, light, BUD LIGHT",
+                        "weight": 29.5,
+                        "measure": "1.0 fl oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "0.38",
+                                "gm": 1.3
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "14005",
+                        "name": "Alcoholic beverage, beer, light, BUDWEISER SELECT",
+                        "weight": 30.0,
+                        "measure": "1.0 fluid ounce",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "0.26",
+                                "gm": 0.87
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "14013",
+                        "name": "Alcoholic beverage, beer, light, MICHELOB ULTRA",
+                        "weight": 29.5,
+                        "measure": "1.0 fl oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "0.22",
+                                "gm": 0.73
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "14003",
+                        "name": "Alcoholic beverage, beer, regular, all",
+                        "weight": 29.7,
+                        "measure": "1.0 fl oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "1.05",
+                                "gm": 3.55
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "14004",
+                        "name": "Alcoholic beverage, beer, regular, BUDWEISER",
+                        "weight": 29.8,
+                        "measure": "1.0 fl oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "0.89",
+                                "gm": 2.97
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "14034",
+                        "name": "Alcoholic beverage, creme de menthe, 72 proof",
+                        "weight": 33.6,
+                        "measure": "1.0 fl oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "13.98",
+                                "gm": 41.6
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "14009",
+                        "name": "Alcoholic beverage, daiquiri, canned",
+                        "weight": 30.5,
+                        "measure": "1.0 fl oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "4.79",
+                                "gm": 15.7
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "14010",
+                        "name": "Alcoholic beverage, daiquiri, prepared-from-recipe",
+                        "weight": 30.2,
+                        "measure": "1.0 fl oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "2.10",
+                                "gm": 6.94
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "14533",
+                        "name": "Alcoholic beverage, distilled, all (gin, rum, vodka, whiskey) 100 proof",
+                        "weight": 27.8,
+                        "measure": "1.0 fl oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "0.00",
+                                "gm": 0.0
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "14037",
+                        "name": "Alcoholic beverage, distilled, all (gin, rum, vodka, whiskey) 80 proof",
+                        "weight": 27.8,
+                        "measure": "1.0 fl oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "0.00",
+                                "gm": 0.0
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "14550",
+                        "name": "Alcoholic beverage, distilled, all (gin, rum, vodka, whiskey) 86 proof",
+                        "weight": 27.8,
+                        "measure": "1.0 fl oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "0.03",
+                                "gm": 0.1
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "14551",
+                        "name": "Alcoholic beverage, distilled, all (gin, rum, vodka, whiskey) 90 proof",
+                        "weight": 27.8,
+                        "measure": "1.0 fl oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "0.00",
+                                "gm": 0.0
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "14532",
+                        "name": "Alcoholic beverage, distilled, all (gin, rum, vodka, whiskey) 94 proof",
+                        "weight": 27.8,
+                        "measure": "1.0 fl oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "0.00",
+                                "gm": 0.0
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "14049",
+                        "name": "Alcoholic beverage, distilled, gin, 90 proof",
+                        "weight": 27.8,
+                        "measure": "1.0 fl oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "0.00",
+                                "gm": 0.0
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "14050",
+                        "name": "Alcoholic beverage, distilled, rum, 80 proof",
+                        "weight": 27.8,
+                        "measure": "1.0 fl oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "0.00",
+                                "gm": 0.0
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "14051",
+                        "name": "Alcoholic beverage, distilled, vodka, 80 proof",
+                        "weight": 27.8,
+                        "measure": "1.0 fl oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "0.00",
+                                "gm": 0.0
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "14052",
+                        "name": "Alcoholic beverage, distilled, whiskey, 86 proof",
+                        "weight": 27.8,
+                        "measure": "1.0 fl oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "0.03",
+                                "gm": 0.1
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "14415",
+                        "name": "Alcoholic beverage, liqueur, coffee with cream, 34 proof",
+                        "weight": 31.1,
+                        "measure": "1.0 fl oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "6.50",
+                                "gm": 20.9
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "14414",
+                        "name": "Alcoholic beverage, liqueur, coffee, 53 proof",
+                        "weight": 34.8,
+                        "measure": "1.0 fl oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "16.29",
+                                "gm": 46.8
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "14534",
+                        "name": "Alcoholic beverage, liqueur, coffee, 63 proof",
+                        "weight": 34.8,
+                        "measure": "1.0 fl oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "11.21",
+                                "gm": 32.2
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "14015",
+                        "name": "Alcoholic beverage, pina colada, canned",
+                        "weight": 32.6,
+                        "measure": "1.0 fl oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "9.00",
+                                "gm": 27.6
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "14017",
+                        "name": "Alcoholic beverage, pina colada, prepared-from-recipe",
+                        "weight": 31.4,
+                        "measure": "1.0 fl oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "7.12",
+                                "gm": 22.66
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "43479",
+                        "name": "Alcoholic beverage, rice (sake)",
+                        "weight": 29.1,
+                        "measure": "1.0 fl oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "1.46",
+                                "gm": 5.0
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "14019",
+                        "name": "Alcoholic beverage, tequila sunrise, canned",
+                        "weight": 31.1,
+                        "measure": "1.0 fl oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "3.51",
+                                "gm": 11.3
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "14027",
+                        "name": "Alcoholic beverage, whiskey sour, canned",
+                        "weight": 30.8,
+                        "measure": "1.0 fl oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "4.13",
+                                "gm": 13.4
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "14029",
+                        "name": "Alcoholic beverage, whiskey sour, prepared from item 14028",
+                        "weight": 30.4,
+                        "measure": "1.0 fl oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "3.90",
+                                "gm": 12.82
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "14025",
+                        "name": "Alcoholic beverage, whiskey sour, prepared with water, whiskey and powder mix",
+                        "weight": 29.4,
+                        "measure": "1.0 fl oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "4.66",
+                                "gm": 15.85
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "43154",
+                        "name": "Alcoholic beverage, wine, cooking",
+                        "weight": 4.9,
+                        "measure": "1.0 tsp",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "0.31",
+                                "gm": 6.3
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "14536",
+                        "name": "Alcoholic beverage, wine, dessert, dry",
+                        "weight": 29.5,
+                        "measure": "1.0 fl oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "3.44",
+                                "gm": 11.67
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "14057",
+                        "name": "Alcoholic beverage, wine, dessert, sweet",
+                        "weight": 29.5,
+                        "measure": "1.0 fl oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "4.04",
+                                "gm": 13.69
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "43155",
+                        "name": "Alcoholic beverage, wine, light",
+                        "weight": 29.5,
+                        "measure": "1.0 fl oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "0.35",
+                                "gm": 1.17
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "14084",
+                        "name": "Alcoholic beverage, wine, table, all",
+                        "weight": 148.0,
+                        "measure": "1.0 serving 5 fl oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "4.03",
+                                "gm": 2.72
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "14096",
+                        "name": "Alcoholic beverage, wine, table, red",
+                        "weight": 29.4,
+                        "measure": "1.0 fl oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "0.77",
+                                "gm": 2.61
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "14101",
+                        "name": "Alcoholic Beverage, wine, table, red, Barbera",
+                        "weight": 29.4,
+                        "measure": "1.0 fl oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "0.82",
+                                "gm": 2.79
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "14152",
+                        "name": "Alcoholic Beverage, wine, table, red, Burgundy",
+                        "weight": 29.5,
+                        "measure": "1.0 fl oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "1.09",
+                                "gm": 3.69
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "14098",
+                        "name": "Alcoholic Beverage, wine, table, red, Cabernet Franc",
+                        "weight": 29.0,
+                        "measure": "1.0 fluid ounce",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "0.71",
+                                "gm": 2.45
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "14097",
+                        "name": "Alcoholic Beverage, wine, table, red, Cabernet Sauvignon",
+                        "weight": 29.0,
+                        "measure": "1.0 fluid ounce",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "0.75",
+                                "gm": 2.6
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "14109",
+                        "name": "Alcoholic Beverage, wine, table, red, Carignane",
+                        "weight": 29.4,
+                        "measure": "1.0 fl oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "0.71",
+                                "gm": 2.4
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "14105",
+                        "name": "Alcoholic Beverage, wine, table, red, Claret",
+                        "weight": 29.4,
+                        "measure": "1.0 fl oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "0.88",
+                                "gm": 3.01
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "14158",
+                        "name": "Alcoholic Beverage, wine, table, red, Gamay",
+                        "weight": 29.4,
+                        "measure": "1.0 fl oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "0.70",
+                                "gm": 2.38
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "14107",
+                        "name": "Alcoholic Beverage, wine, table, red, Lemberger",
+                        "weight": 29.4,
+                        "measure": "1.0 fl oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "0.72",
+                                "gm": 2.46
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "14602",
+                        "name": "Alcoholic Beverage, wine, table, red, Merlot",
+                        "weight": 29.4,
+                        "measure": "1.0 fl oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "0.74",
+                                "gm": 2.51
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "14159",
+                        "name": "Alcoholic Beverage, wine, table, red, Mouvedre",
+                        "weight": 29.4,
+                        "measure": "1.0 fl oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "0.78",
+                                "gm": 2.64
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "14103",
+                        "name": "Alcoholic Beverage, wine, table, red, Petite Sirah",
+                        "weight": 29.5,
+                        "measure": "1.0 fl oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "0.79",
+                                "gm": 2.68
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "14099",
+                        "name": "Alcoholic Beverage, wine, table, red, Pinot Noir",
+                        "weight": 29.4,
+                        "measure": "1.0 fl oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "0.68",
+                                "gm": 2.31
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "14108",
+                        "name": "Alcoholic Beverage, wine, table, red, Sangiovese",
+                        "weight": 29.4,
+                        "measure": "1.0 fl oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "0.77",
+                                "gm": 2.62
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "14100",
+                        "name": "Alcoholic Beverage, wine, table, red, Syrah",
+                        "weight": 29.4,
+                        "measure": "1.0 fl oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "0.76",
+                                "gm": 2.58
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    http_version: 
+  recorded_at: Sun, 27 Sep 2015 01:09:26 GMT
+recorded_with: VCR 2.9.3

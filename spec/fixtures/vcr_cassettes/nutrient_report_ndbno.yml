@@ -1,0 +1,89 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.nal.usda.gov/ndb/nutrients?api_key=gzoe9jgQRFIuAgnX4reii20Gpdc4kkjQ9lqo8cTI&format=JSON&fq=&max=50&ndbno=01009&nutrients=205&offset=0&sort=f&subset=0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Sun, 27 Sep 2015 01:14:40 GMT
+      Location:
+      - ''
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 varnish-v4
+      X-Cache:
+      - MISS
+      X-Ratelimit-Limit:
+      - '1000'
+      X-Ratelimit-Remaining:
+      - '968'
+      X-Varnish:
+      - '41869073'
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+            "report": {
+                "sr": "27",
+                "groups": "All groups",
+                "subset": "All foods",
+                "end": 1,
+                "start": 0,
+                "total": 1,
+                "foods": [
+                    {
+                        "ndbno": "01009",
+                        "name": "Cheese, cheddar",
+                        "weight": 132.0,
+                        "measure": "1.0 cup, diced",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "1.76",
+                                "gm": 1.33
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    http_version: 
+  recorded_at: Sun, 27 Sep 2015 01:14:40 GMT
+recorded_with: VCR 2.9.3

@@ -1,0 +1,826 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.nal.usda.gov/ndb/nutrients?api_key=gzoe9jgQRFIuAgnX4reii20Gpdc4kkjQ9lqo8cTI&format=JSON&fq=&max=50&nutrients=205&offset=0&sort=f&subset=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Sun, 27 Sep 2015 01:21:24 GMT
+      Location:
+      - ''
+      Server:
+      - nginx
+      Set-Cookie:
+      - BIGipServerndb-pool=282659594.20480.0000; path=/
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 varnish-v4
+      X-Cache:
+      - MISS
+      X-Ratelimit-Limit:
+      - '1000'
+      X-Ratelimit-Remaining:
+      - '963'
+      X-Varnish:
+      - '41918258'
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+            "report": {
+                "sr": "27",
+                "groups": "All groups",
+                "subset": "Abridged List",
+                "end": 50,
+                "start": 0,
+                "total": 995,
+                "foods": [
+                    {
+                        "ndbno": "14007",
+                        "name": "Alcoholic beverage, beer, light, BUD LIGHT",
+                        "weight": 29.5,
+                        "measure": "1.0 fl oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "0.38",
+                                "gm": 1.3
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "14009",
+                        "name": "Alcoholic beverage, daiquiri, canned",
+                        "weight": 30.5,
+                        "measure": "1.0 fl oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "4.79",
+                                "gm": 15.7
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "14534",
+                        "name": "Alcoholic beverage, liqueur, coffee, 63 proof",
+                        "weight": 34.8,
+                        "measure": "1.0 fl oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "11.21",
+                                "gm": 32.2
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "14015",
+                        "name": "Alcoholic beverage, pina colada, canned",
+                        "weight": 32.6,
+                        "measure": "1.0 fl oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "9.00",
+                                "gm": 27.6
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "14019",
+                        "name": "Alcoholic beverage, tequila sunrise, canned",
+                        "weight": 31.1,
+                        "measure": "1.0 fl oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "3.51",
+                                "gm": 11.3
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "14027",
+                        "name": "Alcoholic beverage, whiskey sour, canned",
+                        "weight": 30.8,
+                        "measure": "1.0 fl oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "4.13",
+                                "gm": 13.4
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "14098",
+                        "name": "Alcoholic Beverage, wine, table, red, Cabernet Franc",
+                        "weight": 29.0,
+                        "measure": "1.0 fluid ounce",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "0.71",
+                                "gm": 2.45
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "14097",
+                        "name": "Alcoholic Beverage, wine, table, red, Cabernet Sauvignon",
+                        "weight": 29.0,
+                        "measure": "1.0 fluid ounce",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "0.75",
+                                "gm": 2.6
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "14105",
+                        "name": "Alcoholic Beverage, wine, table, red, Claret",
+                        "weight": 29.4,
+                        "measure": "1.0 fl oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "0.88",
+                                "gm": 3.01
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "14107",
+                        "name": "Alcoholic Beverage, wine, table, red, Lemberger",
+                        "weight": 29.4,
+                        "measure": "1.0 fl oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "0.72",
+                                "gm": 2.46
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "14103",
+                        "name": "Alcoholic Beverage, wine, table, red, Petite Sirah",
+                        "weight": 29.5,
+                        "measure": "1.0 fl oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "0.79",
+                                "gm": 2.68
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "14106",
+                        "name": "Alcoholic beverage, wine, table, white",
+                        "weight": 29.4,
+                        "measure": "1.0 fl oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "0.76",
+                                "gm": 2.6
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "14160",
+                        "name": "Alcoholic beverage, wine, table, white, Chardonnay",
+                        "weight": 29.3,
+                        "measure": "1.0 fl oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "0.63",
+                                "gm": 2.16
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "14116",
+                        "name": "Alcoholic beverage, wine, table, white, Chenin Blanc",
+                        "weight": 29.5,
+                        "measure": "1.0 fl oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "0.98",
+                                "gm": 3.31
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "14140",
+                        "name": "Alcoholic beverage, wine, table, white, Muscat",
+                        "weight": 30.0,
+                        "measure": "1.0 fl oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "1.57",
+                                "gm": 5.23
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "14138",
+                        "name": "Alcoholic beverage, wine, table, white, Pinot Blanc",
+                        "weight": 29.3,
+                        "measure": "1.0 fl oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "0.57",
+                                "gm": 1.94
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "14132",
+                        "name": "Alcoholic beverage, wine, table, white, Riesling",
+                        "weight": 29.6,
+                        "measure": "1.0 fl oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "1.11",
+                                "gm": 3.74
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "14134",
+                        "name": "Alcoholic beverage, wine, table, white, Sauvignon Blanc",
+                        "weight": 29.3,
+                        "measure": "1.0 fl oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "0.60",
+                                "gm": 2.05
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "14126",
+                        "name": "Alcoholic beverage, wine, table, white, Semillon",
+                        "weight": 29.5,
+                        "measure": "1.0 fl oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "0.92",
+                                "gm": 3.12
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "11004",
+                        "name": "Amaranth leaves, cooked, boiled, drained, without salt",
+                        "weight": 132.0,
+                        "measure": "1.0 cup",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "5.43",
+                                "gm": 4.11
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "09014",
+                        "name": "Apples, frozen, unsweetened, unheated",
+                        "weight": 173.0,
+                        "measure": "1.0 cup slices",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "21.30",
+                                "gm": 12.31
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "09004",
+                        "name": "Apples, raw, without skin",
+                        "weight": 110.0,
+                        "measure": "1.0 cup slices",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "14.04",
+                                "gm": 12.76
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "09020",
+                        "name": "Applesauce, canned, sweetened, without salt (includes USDA commodity)",
+                        "weight": 246.0,
+                        "measure": "1.0 cup",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "43.03",
+                                "gm": 17.49
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "09027",
+                        "name": "Apricots, canned, heavy syrup pack, with skin, solids and liquids",
+                        "weight": 258.0,
+                        "measure": "1.0 cup, halves",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "55.39",
+                                "gm": 21.47
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "09357",
+                        "name": "Apricots, canned, heavy syrup, drained",
+                        "weight": 219.0,
+                        "measure": "1.0 cup, halves",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "46.67",
+                                "gm": 21.31
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "09030",
+                        "name": "Apricots, dehydrated (low-moisture), sulfured, uncooked",
+                        "weight": 119.0,
+                        "measure": "1.0 cup",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "98.64",
+                                "gm": 82.89
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "09033",
+                        "name": "Apricots, dried, sulfured, stewed, without added sugar",
+                        "weight": 250.0,
+                        "measure": "1.0 cup, halves",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "55.38",
+                                "gm": 22.15
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "18527",
+                        "name": "ARCHWAY Home Style Cookies, Date Filled Oatmeal",
+                        "weight": 25.0,
+                        "measure": "1.0 serving",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "17.04",
+                                "gm": 68.16
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "18532",
+                        "name": "ARCHWAY Home Style Cookies, Iced Molasses",
+                        "weight": 28.0,
+                        "measure": "1.0 serving",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "19.35",
+                                "gm": 69.12
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "18533",
+                        "name": "ARCHWAY Home Style Cookies, Iced Oatmeal",
+                        "weight": 28.0,
+                        "measure": "1.0 serving",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "18.69",
+                                "gm": 66.76
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "18535",
+                        "name": "ARCHWAY Home Style Cookies, Molasses",
+                        "weight": 26.0,
+                        "measure": "1.0 serving",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "18.05",
+                                "gm": 69.41
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "18544",
+                        "name": "ARCHWAY Home Style Cookies, Raspberry Filled",
+                        "weight": 25.0,
+                        "measure": "1.0 serving",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "16.48",
+                                "gm": 65.92
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "11006",
+                        "name": "Arrowhead, cooked, boiled, drained, without salt",
+                        "weight": 12.0,
+                        "measure": "1.0 medium",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "1.94",
+                                "gm": 16.14
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "18566",
+                        "name": "Artificial Blueberry Muffin Mix, dry",
+                        "weight": 31.0,
+                        "measure": "1.0 muffin",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "24.01",
+                                "gm": 77.45
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "11959",
+                        "name": "Arugula, raw",
+                        "weight": 2.0,
+                        "measure": "1.0 leaf",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "0.07",
+                                "gm": 3.65
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "11015",
+                        "name": "Asparagus, canned, drained solids",
+                        "weight": 242.0,
+                        "measure": "1.0 cup",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "5.95",
+                                "gm": 2.46
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "11013",
+                        "name": "Asparagus, canned, regular pack, solids and liquids",
+                        "weight": 122.0,
+                        "measure": "0.5 cup",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "3.03",
+                                "gm": 2.48
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "11012",
+                        "name": "Asparagus, cooked, boiled, drained",
+                        "weight": 90.0,
+                        "measure": "0.5 cup",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "3.70",
+                                "gm": 4.11
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "11019",
+                        "name": "Asparagus, frozen, cooked, boiled, drained, without salt",
+                        "weight": 180.0,
+                        "measure": "1.0 cup",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "3.46",
+                                "gm": 1.92
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "18986",
+                        "name": "AUSTIN, Grilled Cheese on Wafer Crackers, sandwich-type",
+                        "weight": 39.0,
+                        "measure": "1.0 package",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "24.18",
+                                "gm": 62.0
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "18989",
+                        "name": "AUSTIN, Peanut Butter on Toasty Crackers, sandwich-type, reduced fat",
+                        "weight": 36.0,
+                        "measure": "1.0 package",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "24.19",
+                                "gm": 67.2
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "07921",
+                        "name": "Bacon and beef sticks",
+                        "weight": 28.0,
+                        "measure": "1.0 oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "0.22",
+                                "gm": 0.8
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "18007",
+                        "name": "Bagels, oat bran",
+                        "weight": 26.0,
+                        "measure": "1.0 mini bagel (2-1/2\" dia)",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "13.86",
+                                "gm": 53.3
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "18001",
+                        "name": "Bagels, plain, enriched, with calcium propionate (includes onion, poppy, sesame)",
+                        "weight": 99.0,
+                        "measure": "1.0 bagel",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "51.86",
+                                "gm": 52.38
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "18002",
+                        "name": "Bagels, plain, toasted, enriched, with calcium propionate (includes onion, poppy, sesame)",
+                        "weight": 24.0,
+                        "measure": "1.0 mini bagel (2-1/2\" dia)",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "13.71",
+                                "gm": 57.11
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "19146",
+                        "name": "Baking chocolate, MARS SNACKFOOD US, M&amp;M's Milk Chocolate Mini Baking Bits",
+                        "weight": 14.0,
+                        "measure": "1.0 serving 0.5 oz, about 1 tbsp",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "9.58",
+                                "gm": 68.4
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "19139",
+                        "name": "Baking chocolate, MARS SNACKFOOD US, M&amp;M's Semisweet Chocolate Mini Baking Bits",
+                        "weight": 14.0,
+                        "measure": "1.0 serving 0.5 oz, about 1 tbsp",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "9.23",
+                                "gm": 65.96
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "11024",
+                        "name": "Balsam-pear (bitter gourd), pods, raw",
+                        "weight": 93.0,
+                        "measure": "1.0 cup (1/2\" pieces)",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "3.44",
+                                "gm": 3.7
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "11026",
+                        "name": "Bamboo shoots, raw",
+                        "weight": 151.0,
+                        "measure": "1.0 cup (1/2\" slices)",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "7.85",
+                                "gm": 5.2
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "07001",
+                        "name": "Barbecue loaf, pork, beef",
+                        "weight": 28.35,
+                        "measure": "1.0 oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "1.81",
+                                "gm": 6.4
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    http_version: 
+  recorded_at: Sun, 27 Sep 2015 01:21:24 GMT
+recorded_with: VCR 2.9.3

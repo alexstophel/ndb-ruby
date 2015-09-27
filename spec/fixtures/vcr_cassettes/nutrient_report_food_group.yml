@@ -1,0 +1,829 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.nal.usda.gov/ndb/nutrients?api_key=gzoe9jgQRFIuAgnX4reii20Gpdc4kkjQ9lqo8cTI&fg=0100&format=JSON&fq=&max=50&nutrients=205&offset=0&sort=f&subset=0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Sun, 27 Sep 2015 01:05:12 GMT
+      Location:
+      - ''
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 varnish-v4
+      X-Cache:
+      - MISS
+      X-Ratelimit-Limit:
+      - '1000'
+      X-Ratelimit-Remaining:
+      - '971'
+      X-Varnish:
+      - '21984051'
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+            "report": {
+                "sr": "27",
+                "groups": [
+                    {
+                        "id": "0100",
+                        "description": "Dairy and Egg Products"
+                    }
+                ],
+                "subset": "All foods",
+                "end": 50,
+                "start": 0,
+                "total": 264,
+                "foods": [
+                    {
+                        "ndbno": "43205",
+                        "name": "Beverage, instant breakfast powder, chocolate, not reconstituted",
+                        "weight": 7.4,
+                        "measure": "1.0 tbsp",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "4.90",
+                                "gm": 66.2
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "43260",
+                        "name": "Beverage, instant breakfast powder, chocolate, sugar-free, not reconstituted",
+                        "weight": 5.6,
+                        "measure": "1.0 tbsp",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "2.30",
+                                "gm": 41.0
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "43078",
+                        "name": "Beverage, milkshake mix, dry, not chocolate",
+                        "weight": 7.0,
+                        "measure": "1.0 tbsp",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "3.70",
+                                "gm": 52.9
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "01003",
+                        "name": "Butter oil, anhydrous",
+                        "weight": 12.8,
+                        "measure": "1.0 tbsp",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "0.00",
+                                "gm": 0.0
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "01001",
+                        "name": "Butter, salted",
+                        "weight": 5.0,
+                        "measure": "1.0 pat (1\" sq, 1/3\" high)",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "0.00",
+                                "gm": 0.06
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "01002",
+                        "name": "Butter, whipped, with salt",
+                        "weight": 3.8,
+                        "measure": "1.0 pat (1\" sq, 1/3\" high)",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "0.00",
+                                "gm": 0.06
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "01145",
+                        "name": "Butter, without salt",
+                        "weight": 5.0,
+                        "measure": "1.0 pat (1\" sq, 1/3\" high)",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "0.00",
+                                "gm": 0.06
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "01045",
+                        "name": "Cheese food, cold pack, American",
+                        "weight": 28.35,
+                        "measure": "1.0 oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "2.36",
+                                "gm": 8.32
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "44048",
+                        "name": "Cheese food, pasteurized process, American, imitation, without added vitamin D",
+                        "weight": 28.35,
+                        "measure": "1.0 oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "4.59",
+                                "gm": 16.18
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "01046",
+                        "name": "Cheese food, pasteurized process, American, vitamin D fortified",
+                        "weight": 113.0,
+                        "measure": "1.0 cup",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "9.67",
+                                "gm": 8.56
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "01254",
+                        "name": "Cheese food, pasteurized process, American, without added vitamin D",
+                        "weight": 113.0,
+                        "measure": "1.0 cup",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "9.67",
+                                "gm": 8.56
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "01047",
+                        "name": "Cheese food, pasteurized process, swiss",
+                        "weight": 28.35,
+                        "measure": "1.0 oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "1.28",
+                                "gm": 4.5
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "01215",
+                        "name": "Cheese product, pasteurized process, American, reduced fat, fortified with vitamin D",
+                        "weight": 21.0,
+                        "measure": "1.0 slice 3/4 oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "2.23",
+                                "gm": 10.6
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "42258",
+                        "name": "Cheese product, pasteurized process, cheddar, reduced fat",
+                        "weight": 28.0,
+                        "measure": "1.0 slice 1 oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "2.97",
+                                "gm": 10.6
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "01164",
+                        "name": "Cheese sauce, prepared from recipe",
+                        "weight": 30.0,
+                        "measure": "2.0 tbsp",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "1.64",
+                                "gm": 5.48
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "01259",
+                        "name": "Cheese spread, American or Cheddar cheese base, reduced fat",
+                        "weight": 21.0,
+                        "measure": "1.0 piece",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "2.25",
+                                "gm": 10.71
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "43276",
+                        "name": "Cheese spread, cream cheese base",
+                        "weight": 28.35,
+                        "measure": "1.0 oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "0.99",
+                                "gm": 3.5
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "01048",
+                        "name": "Cheese spread, pasteurized process, American",
+                        "weight": 140.0,
+                        "measure": "1.0 cup, diced",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "12.22",
+                                "gm": 8.73
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "01161",
+                        "name": "Cheese substitute, mozzarella",
+                        "weight": 113.0,
+                        "measure": "1.0 cup, shredded",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "26.75",
+                                "gm": 23.67
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "43278",
+                        "name": "Cheese, american cheddar, imitation",
+                        "weight": 21.0,
+                        "measure": "1.0 slice",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "2.44",
+                                "gm": 11.6
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "01061",
+                        "name": "Cheese, American, nonfat or fat free",
+                        "weight": 19.0,
+                        "measure": "1.0 serving",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "2.00",
+                                "gm": 10.53
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "01004",
+                        "name": "Cheese, blue",
+                        "weight": 28.35,
+                        "measure": "1.0 oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "0.66",
+                                "gm": 2.34
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "01005",
+                        "name": "Cheese, brick",
+                        "weight": 132.0,
+                        "measure": "1.0 cup, diced",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "3.68",
+                                "gm": 2.79
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "01006",
+                        "name": "Cheese, brie",
+                        "weight": 28.35,
+                        "measure": "1.0 oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "0.13",
+                                "gm": 0.45
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "01007",
+                        "name": "Cheese, camembert",
+                        "weight": 28.35,
+                        "measure": "1.0 oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "0.13",
+                                "gm": 0.46
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "01008",
+                        "name": "Cheese, caraway",
+                        "weight": 28.35,
+                        "measure": "1.0 oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "0.87",
+                                "gm": 3.06
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "01009",
+                        "name": "Cheese, cheddar",
+                        "weight": 132.0,
+                        "measure": "1.0 cup, diced",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "1.76",
+                                "gm": 1.33
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "01265",
+                        "name": "Cheese, cheddar, nonfat or fat free",
+                        "weight": 28.0,
+                        "measure": "1.0 serving",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "2.00",
+                                "gm": 7.14
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "01260",
+                        "name": "Cheese, cheddar, reduced fat",
+                        "weight": 21.0,
+                        "measure": "1.0 slice",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "0.85",
+                                "gm": 4.06
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "01270",
+                        "name": "Cheese, cheddar, sharp, sliced",
+                        "weight": 19.0,
+                        "measure": "1.0 slice 2/3 oz. slice",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "0.40",
+                                "gm": 2.13
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "01010",
+                        "name": "Cheese, cheshire",
+                        "weight": 28.35,
+                        "measure": "1.0 oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "1.36",
+                                "gm": 4.78
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "01011",
+                        "name": "Cheese, colby",
+                        "weight": 132.0,
+                        "measure": "1.0 cup, diced",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "3.39",
+                                "gm": 2.57
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "01012",
+                        "name": "Cheese, cottage, creamed, large or small curd",
+                        "weight": 113.0,
+                        "measure": "4.0 oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "3.82",
+                                "gm": 3.38
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "01013",
+                        "name": "Cheese, cottage, creamed, with fruit",
+                        "weight": 113.0,
+                        "measure": "4.0 oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "5.21",
+                                "gm": 4.61
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "01016",
+                        "name": "Cheese, cottage, lowfat, 1% milkfat",
+                        "weight": 113.0,
+                        "measure": "4.0 oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "3.07",
+                                "gm": 2.72
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "42235",
+                        "name": "Cheese, cottage, lowfat, 1% milkfat, lactose reduced",
+                        "weight": 113.0,
+                        "measure": "4.0 oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "3.62",
+                                "gm": 3.2
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "43352",
+                        "name": "Cheese, cottage, lowfat, 1% milkfat, no sodium added",
+                        "weight": 113.0,
+                        "measure": "4.0 oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "3.05",
+                                "gm": 2.7
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "43396",
+                        "name": "Cheese, cottage, lowfat, 1% milkfat, with vegetables",
+                        "weight": 113.0,
+                        "measure": "4.0 oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "3.39",
+                                "gm": 3.0
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "01015",
+                        "name": "Cheese, cottage, lowfat, 2% milkfat",
+                        "weight": 113.0,
+                        "measure": "4.0 oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "5.38",
+                                "gm": 4.76
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "01014",
+                        "name": "Cheese, cottage, nonfat, uncreamed, dry, large or small curd",
+                        "weight": 145.0,
+                        "measure": "1.0 cup (not packed)",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "9.66",
+                                "gm": 6.66
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "43273",
+                        "name": "Cheese, cottage, with vegetables",
+                        "weight": 113.0,
+                        "measure": "4.0 oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "3.39",
+                                "gm": 3.0
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "01017",
+                        "name": "Cheese, cream",
+                        "weight": 14.5,
+                        "measure": "1.0 tbsp",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "0.59",
+                                "gm": 4.07
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "01186",
+                        "name": "Cheese, cream, fat free",
+                        "weight": 18.0,
+                        "measure": "1.0 tbsp",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "1.38",
+                                "gm": 7.66
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "43274",
+                        "name": "Cheese, cream, low fat",
+                        "weight": 15.0,
+                        "measure": "1.0 tbsp",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "1.22",
+                                "gm": 8.13
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "01227",
+                        "name": "Cheese, dry white, queso seco",
+                        "weight": 97.0,
+                        "measure": "1.0 cup grated",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "1.98",
+                                "gm": 2.04
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "01018",
+                        "name": "Cheese, edam",
+                        "weight": 28.35,
+                        "measure": "1.0 oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "0.41",
+                                "gm": 1.43
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "01019",
+                        "name": "Cheese, feta",
+                        "weight": 150.0,
+                        "measure": "1.0 cup, crumbled",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "6.14",
+                                "gm": 4.09
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "01020",
+                        "name": "Cheese, fontina",
+                        "weight": 132.0,
+                        "measure": "1.0 cup, diced",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "2.05",
+                                "gm": 1.55
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "01228",
+                        "name": "Cheese, fresh, queso fresco",
+                        "weight": 122.0,
+                        "measure": "1.0 cup crumbled",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "3.64",
+                                "gm": 2.98
+                            }
+                        ]
+                    },
+                    {
+                        "ndbno": "01021",
+                        "name": "Cheese, gjetost",
+                        "weight": 28.35,
+                        "measure": "1.0 oz",
+                        "nutrients": [
+                            {
+                                "nutrient_id": "205",
+                                "nutrient": "Carbohydrate, by difference",
+                                "unit": "g",
+                                "value": "12.09",
+                                "gm": 42.65
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    http_version: 
+  recorded_at: Sun, 27 Sep 2015 01:05:12 GMT
+recorded_with: VCR 2.9.3
