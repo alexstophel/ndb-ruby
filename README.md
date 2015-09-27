@@ -1,7 +1,7 @@
 [![Code Climate](https://codeclimate.com/github/alexstophel/ndb-ruby/badges/gpa.svg)](https://codeclimate.com/github/alexstophel/ndb-ruby)
 [![Test Coverage](https://codeclimate.com/github/alexstophel/ndb-ruby/badges/coverage.svg)](https://codeclimate.com/github/alexstophel/ndb-ruby/coverage)
 [![Build Status](https://travis-ci.org/alexstophel/ndb-ruby.svg?branch=master)](https://travis-ci.org/alexstophel/ndb-ruby)
-
+[![Gem Version](https://badge.fury.io/rb/ndb-ruby.svg)](http://badge.fury.io/rb/ndb-ruby)
 # NDB-Ruby
 
 This is a simple Ruby wrapper around the National Nutrient Database REST API
@@ -10,6 +10,14 @@ parameters accepted by the API can be specified through the methods in this gem.
 
 This gem assumes that you want data returned in JSON format. There may be
 support for XML in the future.
+
+## Getting started
+
+Add the gem to your Gemfile:
+
+```ruby
+gem 'ndb-ruby', '~> 1.0.0'
+```
 
 ## Setting the API Key
 
