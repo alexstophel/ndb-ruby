@@ -3,7 +3,7 @@ if ENV["CODECLIMATE_REPO_TOKEN"]
   CodeClimate::TestReporter.start
 end
 
-require "./lib/ndb"
+require "./lib/ndb-ruby"
 require "vcr"
 
 VCR.configure do |config|

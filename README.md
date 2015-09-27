@@ -16,7 +16,7 @@ support for XML in the future.
 Add the gem to your Gemfile:
 
 ```ruby
-gem 'ndb-ruby', '~> 1.0.0'
+gem 'ndb-ruby', '~> 0.2.0'
 ```
 
 ## Setting the API Key
